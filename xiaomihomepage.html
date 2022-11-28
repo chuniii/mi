@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
+  
     <head>
         <meta charset="utf-8" />
         <title>小米官網</title>
         <link rel="icon" href="image/mimi.ico" type="image/x-icon">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        
 
         <style>
+        
+
+
           .notify {
             background-color : #ff6700;
             height : 30px;
@@ -185,8 +191,7 @@
             height: 100px;
             background-color: white;
             display: table;
-            float: left;
-            
+            float: left;  
           }
 
           .xiaomi_service {
@@ -198,19 +203,130 @@
           }
 
           .search_item {
-            width: 298px;
-            height: 50px;
-            margin-top: 25px;
+            width: 296px;
+            height: 48px;
+            margin: 25px 0;
             border: 1px solid #e0e0e0;
             color: transparent;
+            float: right;
+            display: table-cell;
+          }
+
+          .search_text {
+            width: 223px;
+            height: 33px;
+            padding: 15px 0 0 15px;
+            display: inline-block;
+            line-height: 20px;
+          }
+
+          .search_product_text {
+            color: #757575;
+            display: table;
+            margin: 0;
+          }
+
+          .search_keyword {
+            color: #424242;
+            font-size: 12px;
+            background-color: #eee;
+            margin-top: -21px;
+            padding-right: 3px;
+            float: right;
+            display: table;
+            cursor: pointer;
+          }
+
+          .search_iconbox {
+            width: 50px;
+            height: 48px;
+            border-left:1px solid #e0e0e0 ;
+            display: inline-block;
+            float: right;
+            cursor: pointer;
+          }
+
+          .search_iconbox :hover {
+            background-color: #ff6700;
+            color : white;
+          }
+
+          .magnifier {
+            color: #616161;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 16px 17px 16px 17px;
+            display: table;
             float: right;
           }
 
           .middle_container {
             height:1244px;
-            background-color: #b0b0b0;
             margin: 0 147px;
           }
+          
+          .main_container {
+            height: 780px;
+            margin-bottom: 26px;
+          }
+
+          .main_container_slider {
+            height: 460px;
+            position: relative;
+            background-color: blue;
+            overflow: hidden;
+          }
+
+          .main_container_advertise {
+            height: 170px;
+            margin-top: 14px;
+          }
+
+          .main_container_advertise_list {
+            width: 296px;
+            height: 170px;
+            margin-right: 14px;
+            float: left;
+            display: inline-block;
+          }
+
+          .main_container_advertise_list_poco {
+            width: 296px;
+            height: 170px;
+            margin-left: -296px;
+            float: right;
+            display: inline-block;
+          }
+
+          .main_container_event {
+            width: 1226px;
+            height: 120px;
+            margin-top: 16px;
+            cursor: pointer;
+          }
+
+          .main_star_products_container {
+            height: 438px;
+          }
+
+          .main_star_products_titlebox {
+            height: 58px;
+          }
+
+          .main_star_products_titlebox_style {
+            color: #212121;
+            font-size: 22px;
+            line-height: 58px;
+            font-weight: 200;
+
+          }
+
+          .main_star_products_content {
+            height: 380px;
+            background-color: lightsalmon;
+            padding-bottom: 40px;
+          }
+
 
           .product_rank {
             height:5326px;
@@ -436,6 +552,7 @@
             font-weight : 400;
             margin : 0px;
             line-height: 1.5;
+            font-size: 14px;
           }
 
          
@@ -443,6 +560,7 @@
         </style>
 
       <script src="https://kit.fontawesome.com/8ee9a4dc46.js" crossorigin="anonymous"></script>
+   
       
 
 
@@ -512,16 +630,45 @@
               <p class = "header_content_decoration">服務</p>
             </div>
           </div>
-          <div class = "search_item"></div>
+          <div class = "search_item">
+            <div class = "search_text">
+              <p class = "search_product_text">搜尋商品</p>
+              <p class = "search_keyword">Xiaomi 12 系列</p>
+            </div>
+            <div class = "search_iconbox">
+              <i class="fi fi-br-search magnifier"></i>
+            </div>
+          </div>
         </div>
-
-
-
-
-
-
         <div class = "middle_container">
-          
+          <div class="main_container">
+            <div class="main_container_slider">
+              <a href="https://www.mi.com/tw/product/poco-c40/" target="_blank" class = "main_container_first_pc"><img src="image/pc-c40.png"></a>
+            </div> 
+            <div class="main_container_advertise">
+              <div class="main_container_advertise_list">
+                <a href="https://www.mi.com/tw/product/redmi-10c/" target="_blank"><img src="image/redmi 10c.png"></a>
+              </div>
+              <div class="main_container_advertise_list">
+                <a href="https://www.mi.com/tw/product/redmi-note-11s/" target="_blank"><img src="image/redmi note 11s.png"></a>
+              </div>
+              <div class="main_container_advertise_list">
+                <a href="https://event.mi.com/tw/business" target="_blank"><img src="image/xiaomi_groupbuy.png"></a>
+              </div>
+              <div class="main_container_advertise_list_poco">
+                <a href="https://www.po.co/tw/" target="_blank"><img src="image/poco_website.png"></a>
+              </div>
+            </div>
+            <div class="main_container_event">
+              <a href="https://event.mi.com/tw/huiyuanquanyi"><img src="image/xiaomi_firstmember_gift.png"></a>
+            </div> 
+          </div>
+          <div class="main_star_products_container">
+            <div class="main_star_products_titlebox">
+              <p class = "main_star_products_titlebox_style">明星商品</p>
+            </div> 
+            <div class="main_star_products_content"></div> 
+          </div>
         </div>
 
 
@@ -538,8 +685,6 @@
                 <p style="color:#424242 ;">免運費</p>
                 <p>全場滿NT$800</p>
               </a>
-             
-    
             </div>
 
 
@@ -607,14 +752,14 @@
               <p class = "footer_space"><a href = "https://www.mi.com/tw/about/founder/">管理團隊</a></p>
               <p class = "footer_space"><a href = "https://www.mi.com/tw/about/privacy/" target="_blank">隱私條款</a></p>
               <p class = "footer_space"><a href = "https://integrity.mi.com/global#process">誠信規範</a></p>
-              <p class = "footer_space">投資者關係</p>
+              <p class = "footer_space"><a href = "https://i18n-cms.be.mi.com/index.php?m=block&c=block_admin&a=preview&id=1265&pc_hash=fMICBc">投資者關係</a></p>
               <p class = "footer_space"><a href = "https://trust.mi.com/">信任中心</a></p>
             </div>
             <div class = "where_buy"> 
               <p class = "footer_title">小米哪裡買</p>
               <p class = "footer_space"><a href="https://www.mi.com/tw/service/wheretobuy/">小米之家/小米專賣店</a></p>
-              <p class = "footer_space"><a href= "https://www.mi.com/tw/service/support/official_authorization.html">官方授權通路</a></p>
-              <p class = "footer_space">聯絡我們</p>
+              <p class = "footer_space"><a href="https://www.mi.com/tw/service/support/official_authorization.html">官方授權通路</a></p>
+              <p class = "footer_space"><a href="mailto:service.tw@support.mi.com">聯絡我們</a></p>
             </div>
             <div class = "other_information"> 
               <p class = "telephone">02-77255376</p>
