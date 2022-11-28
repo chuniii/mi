@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>小米官網</title>
+        <link rel="icon" href="image/mimi.ico" type="image/x-icon">
+
+        <style>
+          .notify {
+            background-color : #ff6700;
+            height : 30px;
+            width : 100%;
+            color : white;
+            text-align : center;
+            font-size : 14px;
+            line-height : 1.5;
+           
+          }
+
+          .close_notify {
+            color : white;
+            font-size : 20px;
+            cursor : pointer;
+          }
+
+          .advertise {
+            width : 100%;
+            height : 160px;
+            background-image: url('image/eleven.jpg');
+            background-position: center center;
+          }
+
+          .topbar {
+            width : 100%;
+            height : 40px;
+            background-color : #212121;
+          }
+
+          .topbar .devide {
+            margin : 0 20px;
+            color :#424242;
+          }
+
+          .xiaomi_activity {
+            width:1226px;
+            margin: 0 auto;
+          }
+
+          .xiaomi_link {
+            line-height : 40px;
+            font-size : 12px;
+            float: left;
+          }
+
+          .xiaomi_right {
+            line-height : 40px;
+            font-size : 12px;
+            float:right;
+            
+          }
+
+          a {
+            text-decoration : none;
+            cursor : pointer;
+            color: #b0b0b0;
+          }
+
+          a :hover {
+             color : #424242;
+          }
+
+          .xiaomi_activity a:hover {
+            color: white;
+          }
+
+          .header_content :hover {
+            color : #ff6700;
+          }
+
+          .additional_service :hover {
+            color : #424242;
+          }
+
+          .footer_content a:hover{
+            color: white;
+          }
+
+          .bottom a:hover {
+            color: white;
+            text-decoration: underline;
+          }
+
+          .header {
+            height:100px;
+            margin: 0 147px;
+            display: flex;
+          }
+
+          .xiaomi_logo {
+            width: 56px;
+            line-height: 100px;
+            background-image: url('image/mi-logo-bg.svg');
+            float: left;
+            flex-wrap: wrap;
+            background-size: 56px;
+            background-position: left center; 
+            background-repeat: no-repeat;
+            overflow: hidden;
+          }
+
+          .xiaomi_logo_change {
+            vertical-align: middle;
+            margin-left: -56px;
+          }
+
+          .money_on_the_hand {
+            width :168px ;
+            height: 100px;
+            background-image: url('image/money.gif');
+            background-position: center center; 
+            background-repeat: no-repeat;
+          }
+
+          .header_content {
+            width: 704px;
+            height: 100px;
+          }
+
+          .header_content_decoration {
+            vertical-align: middle;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            color: #424242;
+            background-color: white;
+            display: table-cell;
+            height: 100px;
+            text-align: center;
+          }
+
+          .xiaomi_cellphone {
+            width : 118.15px;
+            height: 100px;
+            background-color: white;
+            display: table;
+            float: left;
+           
+          }
+
+          .redmi_cellphone {
+            width : 113.13px;
+            height: 100px;
+            background-color: white;
+            display: table;
+            float: left;
+          }
+
+          .POCO_cellphone {
+            width : 109.28px;
+            height: 100px;
+            background-color: white;
+            display: table;
+            float: left;
+            
+          }
+
+          .smart_family {
+            width : 94px;
+            height: 100px;
+            background-color: white;
+            display: table;
+            float: left;
+          }
+
+          .smart_technology {
+            width : 94px;
+            height: 100px;
+            background-color: white;
+            display: table;
+            float: left;
+          }
+
+          .xiaomi_accessories {
+            width : 62px;
+            height: 100px;
+            background-color: white;
+            display: table;
+            float: left;
+            
+          }
+
+          .xiaomi_service {
+            width : 62px;
+            height: 100px;
+            background-color: white;
+            display: table;  
+            float: left;
+          }
+
+          .search_item {
+            width: 298px;
+            height: 50px;
+            margin-top: 25px;
+            border: 1px solid #e0e0e0;
+            color: transparent;
+            float: right;
+          }
+
+          .middle_container {
+            height:1244px;
+            background-color: #b0b0b0;
+            margin: 0 147px;
+          }
+
+          .product_rank {
+            height:5326px;
+            background-color: pink;
+            margin: 0 147px;
+          }
+          
+          .additional_service {
+            height:80px;
+            margin: 0 auto;
+          }
+
+          .four_services {
+            width :1226px;
+            height : 80px;
+            margin : 0 147px;
+            background-color: white;
+          }
+
+          .free_delivery {
+            width: 306.5px;
+            height: 40px;
+            font-size: 14px;
+            text-align: left;
+            line-height : 0.15cm;
+            margin : 20px 0px;
+            background-color: aqua;
+            display: inline-block;
+            float : left;
+          }
+
+          .blackcat {
+            width: 306.5px;
+            height: 40px;
+            font-size: 14px;
+            text-align: left center;
+            line-height : 0.15cm;
+            margin : 20px 0px 20px 0;
+            background-color: aqua;
+            display: inline-block;
+            float : left;
+          }
+
+          .group_buy {
+            width: 306.5px;
+            height: 40px;
+            font-size: 14px;
+            text-align: left center ;
+            line-height : 0.15cm;
+            margin : 20px 0;
+            background-color: aqua;
+            display: inline-block;
+            border-right: #b0b0b0 solid 1px;
+            float : left;
+            
+          }
+
+          .follow_us {
+            width: 305.5px;
+            height: 40px;
+            margin : 20px 0;
+            float : right;
+            justify-content: center;
+            display: flex;
+            line-height: 1.5;
+          }
+
+          .follow {
+            margin : 10px 0 14px;
+            font-size: 14px;
+            display: inline-block;
+            float:left ;
+            color: #424242;
+          }
+
+          .facebook {
+            color : #b0b0b0;
+            font-size : 16px;
+            cursor : pointer;
+            margin: 12px 20px;
+            display: inline-block;
+            float:left ;
+
+          }
+
+          .instagram {
+            cursor : pointer;
+            width : 16px;
+            margin:10px 20px 14px 0;
+            display: inline-block;
+            float:left ;
+            
+          }
+
+          .youtube {
+            color : #b0b0b0;
+            font-size : 16px;
+            cursor : pointer;
+            margin:12px 20px 12px 0;
+            float: left;
+            display: inline-block;
+         
+          }
+
+          .line {
+            color : #b0b0b0;
+            font-size : 16px;
+            cursor : pointer;
+            margin: 12px 0;
+            float: left;
+            display: inline-block;
+          }
+
+          .footer {
+            height:439px;
+            margin : 0;
+            background-color: #212121;
+          }
+
+          .footer_content {
+            margin: 0 147px;
+            height: 339px;
+            color: #b0b0b0;
+            font-size: 14px;
+            border-bottom: #4b4b4b solid 1px;
+          }
+
+          .footer_title {
+            margin : 0 0 20px;
+          }
+
+          .footer_space {
+            margin : 0 0 10px;
+          }
+
+          .product {
+            width:155px;
+            height: 258px;
+            margin: 40px 0;
+            display: inline-block;
+            float: left;
+          }
+
+          .help_center {
+            width:155px;
+            height: 258px;
+            margin: 40px 30px 40px 30px;
+            display: inline-block;
+            float: left;
+          }
+
+          .customer_support {
+            width:200px;
+            height: 258px;
+            margin: 40px 30px 40px 0;
+            display: inline-block;
+            float: left;
+          }
+
+          .about_xiaomi {
+            width:155px;
+            height: 258px;
+            margin: 40px 30px 40px 0;
+            display: inline-block;
+            float: left;
+          }
+
+          .where_buy {
+            width: 135.5px;
+            height: 258px;
+            margin: 40px 0 40px 0;
+            display: inline-block;
+            float: left;
+            text-align: left ;           
+          }
+
+          .other_information {
+            width:305.5px;
+            height:258px;
+            margin: 40px 0 40px -920.5px;
+            display: inline-block;
+            float: right;
+          }
+
+          .telephone {
+            width: 178px;
+            margin : 0 45px 0 82.5px;
+            font-family: 'Avenir Next Condensed',Arial,sans-serif;
+            color: white; 
+            font-size: 30px;
+            font-weight: 600;
+            text-align: top;
+            line-height: 1;
+          }
+
+          .service_time {
+            width: 172px;
+            margin: 5px 48px 0px 85.5px;
+            font-size: 12px; 
+          }
+
+          .bottom {
+            margin-top: 0px;
+            height: 100px;
+            color: #b0b0b0;
+            font-size: 12px;  
+            background-color: #212121;
+          }
+
+          .xiaomi_copyright {
+            margin: 35px 147px 65px 147px;
+            float: left;
+          }
+
+          .space {
+            height: 20px;
+            background-color: transparent;
+            margin: 0; 
+          }
+
+          body{
+            font-family : "Microsoft Yahei","Hiragino Sans GB",sans-serif;
+            font-weight : 400;
+            margin : 0px;
+            line-height: 1.5;
+          }
+
+         
+
+        </style>
+
+      <script src="https://kit.fontawesome.com/8ee9a4dc46.js" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+    </head>
+    <body>
+      
+        <div class = "notify">
+          <a href="https://www.mi.com/tw/service/support/fangyiprotect.html" style = "color: white;">小米防疫&物流發貨公告>></a>
+          <i class = "close_notify" >×</i>
+        </div>
+
+        <div class = "advertise" >
+        <a href="https://event.mi.com/tw/double11-encore"></a>
+        </div>  
+
+        <div class = "topbar">
+          <div class = xiaomi_activity>
+            <div class = "xiaomi_link" >
+              <a href="https://global.miui.com/en" target =" _blank">MIUI</a>
+              <span class = "devide">|</span>
+              <a href="https://www.mi.com/tw/appdownload/" target =" _blank">下載小米商城 APP</a>
+              <span class = "devide">|</span>
+              <a href="https://global.miui.com/en" target =" _blank">小米積分中心</a>
+              <span class = "devide">|</span>
+              <a href="https://event.mi.com/tw/imeilogin" target =" _blank">登錄送活動</a>
+              <span class = "devide">|</span>
+              <a href="https://event.mi.com/tw/business">小米團購</a>
+            </div>
+
+            <div class="xiaomi_right">
+              <a href="https://account.xiaomi.com/fe/service/login/password?_locale=zh_TW">登入</a>
+              <span class = "devide">|</span>
+              <a href="https://global.account.xiaomi.com/fe/service/register?_locale=zh_TW" target =" _blank">註冊</a>
+              <span class = "devide">|</span>
+              <a href="https://event.mi.com/tw/business">購物車()</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class = "header">
+          <div class = "xiaomi_logo"><img src = "image/mi.svg" class="xiaomi_logo_change"></div>
+          <div class = "money_on_the_hand"></div>
+          <div class ="header_content">
+            <div class = "xiaomi_cellphone">
+              <p class = "header_content_decoration">Xiaomi手機</p>
+            </div>
+            <div class = "redmi_cellphone">
+              <p class = "header_content_decoration">Redmi手機</p>
+            </div>
+            <div class = "POCO_cellphone">
+              <p class = "header_content_decoration">POCO手機</p>
+            </div>
+            <div class = "smart_family">
+              <p class = "header_content_decoration">智慧家庭</p>
+            </div>
+            <div class = "smart_technology">
+              <p class = "header_content_decoration">智慧科技</p>
+            </div>
+            <div class = "xiaomi_accessories">
+              <p class = "header_content_decoration">配件</p>
+            </div>
+            <div class = "xiaomi_service">
+              <p class = "header_content_decoration">服務</p>
+            </div>
+          </div>
+          <div class = "search_item"></div>
+        </div>
+
+
+
+
+
+
+        <div class = "middle_container">
+          
+        </div>
+
+
+
+
+        <div class = "product_rank">
+          
+        </div>
+
+        <div class = "additional_service">
+          <div class = "four_services">
+            <div class = "free_delivery">
+              <a href="https://www.mi.com/tw/service/shipping/">
+                <p style="color:#424242 ;">免運費</p>
+                <p>全場滿NT$800</p>
+              </a>
+             
+    
+            </div>
+
+
+            <div class = "blackcat">
+              <a href="https://www.mi.com/tw/service/shipping/">
+                <p style="color:#424242 ;">黑貓宅急便 x GOGOX</p>
+                <p>服務升級, 限時送達</p>
+              </a>
+            </div>
+
+
+            <div class = "group_buy">
+              <a href="https://www.mi.com/tw/business/">
+                <p style="color: #424242 ;">團購採購通道</p>
+                <p>採購小米好禮專屬通道</p>
+              </a>
+            </div>
+
+            <div class = "follow_us">
+              <p class = "follow">關注我們</p>
+              <a href = "https://www.facebook.com/XiaomiTaiwan/" target="_blank"><i class="fa-brands fa-facebook-f facebook"></i></a>
+              <a href ="https://www.instagram.com/xiaomi.taiwan/" target="_blank"><i class = "instagram"><img src = "image/instagram_gray.png"> </i></a>
+              <a href = "https://www.youtube.com/user/xiaomitaiwan" target="_blank"><i class="fa-brands fa-youtube youtube"></i></a>
+              <a href = "https://line.me/R/ti/p/@528mnunm?from=page" target="_blank"><i class="fa-brands fa-line line"></i></a>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+        <div class = "footer">
+          <div class = "footer_content">
+            <div class = "product"> 
+              <p class = "footer_title">產品與配件</p>
+              <p class = "footer_space"><a href="https://www.mi.com/tw/list/">熱門商品分類</a></p>
+              <p class = "footer_space"><a href="https://buy.mi.com/tw/accessories/">全部商品分類</a></p>
+              <p class = "footer_space"><a href ="https://buy.mi.com/tw/static/re?1125">官方翻新機</a></p>
+              <p class = "footer_space"><a href="https://account.xiaomi.com/fe/service/login/password?_locale=zh_TW">F 碼通道</a></p>
+            </div>
+            <div class = "help_center"> 
+              <p class = "footer_title">幫助中心</p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/shopping/">購物指南</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/pay/">付款幫助</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/paypalHelp/">PayPal 使用幫助</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/creditcard_instalment/">分期付款</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/qa/">常見 Q&A</a></p>
+              <p class = "footer_space"><a href = "https://sg.m.beehive.miui.com/CkSQ6quiLkyymS7y8AWaBA/desktop/home">線上填寫折讓單入口</a></p>
+              <p class = "footer_space"><a href = "https://sg.m.beehive.miui.com/RAagR9lyIkVBRq1PG1Prhg/desktop/home">退款資料補充</a></p>
+            </div>
+            <div class = "customer_support"> 
+              <p class = "footer_title">客戶支援</p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/">服務條款及細則</a></p>
+              <p class = "footer_space"><a href = "https://buy.mi.com/tw/service/repair/">維修站地點</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/exchange/">售後服務政策</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/refund/">退貨須知</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/shipping/">配送規範</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/userguide/">使用者指南</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/service/support/vipservice.html">尊享服務</a></p>
+            </div>
+            <div class = "about_xiaomi"> 
+              <p class = "footer_title">關於小米</p>
+              <p class = "footer_space"><a href="https://www.mi.com/tw/about/">瞭解小米</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/about/founder/">管理團隊</a></p>
+              <p class = "footer_space"><a href = "https://www.mi.com/tw/about/privacy/" target="_blank">隱私條款</a></p>
+              <p class = "footer_space"><a href = "https://integrity.mi.com/global#process">誠信規範</a></p>
+              <p class = "footer_space">投資者關係</p>
+              <p class = "footer_space"><a href = "https://trust.mi.com/">信任中心</a></p>
+            </div>
+            <div class = "where_buy"> 
+              <p class = "footer_title">小米哪裡買</p>
+              <p class = "footer_space"><a href="https://www.mi.com/tw/service/wheretobuy/">小米之家/小米專賣店</a></p>
+              <p class = "footer_space"><a href= "https://www.mi.com/tw/service/support/official_authorization.html">官方授權通路</a></p>
+              <p class = "footer_space">聯絡我們</p>
+            </div>
+            <div class = "other_information"> 
+              <p class = "telephone">02-77255376</p>
+              <p class = "service_time">服務時間 09:00-18:00 含節假日</p>
+            </div>
+          </div> 
+          <div class ="bottom">
+            <p class = "xiaomi_copyright">© 2010 - 2022 Xiaomi 版權所有 旗下網站： 
+              <a href = "https://www.mi.com/tw/">小米商城</a> <a href="https://global.miui.com/en">MIUI</a></p>
+          </div>
+        </div>
+
+      
+
+        <div class = "space"></div>
+    </body>
+</html>
