@@ -6,6 +6,7 @@
         <title>小米官網</title>
         <link rel="icon" href="image/mimi.ico" type="image/x-icon">
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
         
 
         <style>
@@ -152,7 +153,30 @@
             background-color: white;
             display: table;
             float: left;
-           
+          }
+          /* 小米手機hover下拉選單 */
+
+          /* .xiaomi_cellphone_drop {  
+            width: 1520px;
+            height: 230px;
+            background-color: white;
+            border-top: solid 1px #b0b0b0;
+            display:inline-block;
+            position:relative;
+            float: left;
+            left: 10%;
+           } */
+
+          /* .xiaomi_cellphone_drop_content { 
+            width: 1226px;
+            height: 230px;
+            margin: 0 147px 0;
+            display:none;
+            position: absolute;
+           } */
+
+          .xiaomi_cellphone_drop:hover .xiaomi_cellphone_drop_content {
+            display: block;
           }
 
           .redmi_cellphone {
@@ -311,6 +335,14 @@
             position: absolute;
           }
 
+          .circle_change_pictures {
+            position:absolute;
+            width: 240px;
+            height: 18px;
+            margin: 422px 30px 20px 956px;
+            text-align: center;
+          }
+
           .choose_arrow {
             width: 16px;
             height: 16px;
@@ -462,6 +494,13 @@
             height:5206px;
             margin: 0 147px;
           }
+          /* 明星商品 */
+          .main_star_products_content {
+            width: 1226px;
+            height: 340px;
+
+
+          }
 
           .star_products_contentbox {
             width: 234px;
@@ -479,6 +518,14 @@
             float: right;
             background-color: #fafafa;
             display: inline-block;
+          }
+
+          .star_product_picture {
+            width: 160px;     
+            height: 160px;       
+            margin: 39px 37px 22px;
+            cursor: pointer;
+            display: inline block;
           }
 
           #rainbow_border_top1 {
@@ -566,6 +613,16 @@
             height: 21px;
             color: #ff6709;
             margin: 0;
+            text-align: center;
+            box-shadow: none;
+          }
+
+          
+          .star_products_price {
+            width: 234px;
+            height: 21px;
+            color: #ff6709;
+            margin-top: 30px;
             text-align: center;
             box-shadow: none;
           }
@@ -942,6 +999,48 @@
         </style>
 
       <script src="https://kit.fontawesome.com/8ee9a4dc46.js" crossorigin="anonymous"></script>
+
+      <script language="javascript">
+        
+        function change_pic1() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/double12.png'>";
+        }
+        function change_pic2() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main2.png'>";
+        }
+        function change_pic3() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main3.jpg'>";
+        }
+        function change_pic4() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main4.jpg'>";
+        }
+        function change_pic5() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main5.jpg'>";
+        }
+        function change_pic6() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main6.jpg'>";
+        }
+        function change_pic7() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main7.png'>";
+        }
+        function change_pic8() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main8.png'>";
+        }
+        function change_pic9() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main9.png'>";
+        }
+        function change_pic10() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main10.png'>";
+        }
+        function change_pic11() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main11.jpg'>";
+        }
+        function change_pic12() {
+          document.getElementsByClassName("main_container_slider").innerHTML="<img src='image/main12.png'>";
+        }
+
+
+      </script>
    
       
 
@@ -990,9 +1089,41 @@
           <div class = "xiaomi_logo"><img src = "image/mi.svg" class="xiaomi_logo_change"></div>
           <div class = "money_on_the_hand"></div>
           <div class ="header_content">
-            <div class = "xiaomi_cellphone">
-              <p class = "header_content_decoration">Xiaomi手機</p>
-            </div>
+
+            <div class = "xiaomi_cellphone"><p class = "header_content_decoration">Xiaomi手機</p></div>
+            
+            <!-- <div class="xiaomi_cellphone_drop"> 
+
+              
+              
+                <div class="xiaomi_cellphone_drop_content">
+                <a href = "https://www.mi.com/tw/product/xiaomi-12t-pro/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
+                <p>Xiaomi 12T Pro</p></a> 
+                <p class="products_name">NT$19,999</p>
+              
+                <a href = "https://www.mi.com/tw/product/xiaomi-12t/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140">
+                <p>Xiaomi 12T</p></a> 
+                <p class="products_name">NT$16,999</p>
+              
+                <a href = "https://www.mi.com/tw/product/xiaomi-12-pro"><img src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
+                <p>Xiaomi 12 Pro 5G</p></a> 
+                <p class="products_name">NT$26,999</p>
+
+                <a href = "https://www.mi.com/tw/product/xiaomi-12"><img src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
+                <p>Xiaomi 12 5G</p></a> 
+                <p class="products_name">NT$23,999</p>
+   
+                <a href = "https://www.mi.com/tw/product/xiaomi-12-lite/"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
+                <p>Xiaomi 12 Lite</p></a> 
+                <p class="products_name">NT$13,999</p>
+
+                <a href = "https://www.mi.com/tw/product/xiaomi-12x/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
+                <p>Xiaomi 12X 5G</p></a> 
+                <p class="products_name">NT$16,999</p>
+              </div> 
+              
+            </div>-->
+
             <div class = "redmi_cellphone">
               <p class = "header_content_decoration">Redmi手機</p>
             </div>
@@ -1027,6 +1158,20 @@
             <div class="main_container_slider">
               <div id="right_arrow_box"></div>
               <div id="left_arrow_box"></div>
+              <div class="circle_change_pictures">
+                <i class="fi fi-ss-circle-small" id="circle1" onclick="change_pic1()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle2" onclick="change_pic2()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle3" onclick="change_pic3()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle4" onclick="change_pic4()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle5" onclick="change_pic5()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle6" onclick="change_pic6()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle7" onclick="change_pic7()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle8" onclick="change_pic8()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle9" onclick="change_pic9()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle10" onclick="change_pic10()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle11" onclick="change_pic11()" style="cursor: pointer;"></i>
+                <i class="fi fi-ss-circle-small" id="circle12" onclick="change_pic12()" style="cursor: pointer;"></i>
+              </div>
               <div class="left_choose_list">
                 <div id="choose_list_1"><p class="choose_list_text"><b>手機</b></p><p class="choose_arrow">></p></div>
                 <div id="choose_list_2"><p class="choose_list_text"><b>視聽娛樂</b></p><p class="choose_arrow">></p></div>
@@ -1039,8 +1184,21 @@
                 <div id="choose_list_9"><p class="choose_list_text"><b>生活周邊</b></p><p class="choose_arrow">></p></div>
                 <a href="https://buy.mi.com/tw/accessories/"><div id="choose_list_10"><p class="choose_list_text"><b>全部配件分類</b></p></div></a>
               </div>
-              <a href="https://event.mi.com/tw/2022-midouble12" class = "main_container_first_pc"><img src="image/double12.png"></a>
-            </div> 
+              <a href="https://event.mi.com/tw/2022-midouble12"> 
+                <img src="image/double12.png"></a>
+                <img src="image/main2.png">
+                <img src="image/main3.jpg">
+                <img src="image/main4.jpg">
+                <img src="image/main5.jpg">
+                <img src="image/main6.jpg">
+                <img src="image/main7.png">
+                <img src="image/main8.png">
+                <img src="image/main9.png">
+                <img src="image/main10.png">
+                <img src="image/main11.jpg">
+                <img src="image/main12.png">
+              
+             </div> 
             <div class="main_container_advertise">
               <div class="main_container_advertise_list">
                 <a href="https://www.mi.com/tw/product/redmi-10c/" target="_blank"><img src="image/redmi 10c.png"></a>
@@ -1064,11 +1222,39 @@
               <p class = "products_titlebox_style">明星單品</p>
             </div> 
             <div class="main_star_products_content">
-              <div class="star_products_contentbox" id="rainbow_border_top1"></div>
-              <div class="star_products_contentbox" id="rainbow_border_top2"></div>
-              <div class="star_products_contentbox" id="rainbow_border_top3"></div>
-              <div class="star_products_contentbox" id="rainbow_border_top4"></div>
-              <div class="star_products_contentbox_right" id="rainbow_border_top5"></div>
+              <div class="star_products_contentbox" id="rainbow_border_top1">
+                <a href="https://www.mi.com/tw/product/xiaomi-book-s-12-4/" target="_blank"><img src="image/明星一.png" class="star_product_picture">
+                <p class="products_name">Xiaomi Book S 12.4</p></a>
+                <p class="star_products_price">NT$ 20995</p>
+              </div>
+              <div class="star_products_contentbox" id="rainbow_border_top2">
+                <div>
+                  <a href="https://www.mi.com/tw/product/monitor55/" target="_blank"><img src="image/明星二.png" class="star_product_picture"> 
+                  <p class="products_name">小米智慧顯示器 P1 55型</p></a>
+                  <p class="star_products_price">NT$ 17999</p>
+                </div>
+              </div>
+              <div class="star_products_contentbox" id="rainbow_border_top3">
+                <div>
+                  <a href="https://www.mi.com/tw/product/mi-smart-projector-2/" target="_blank"><img src="image/明星三.png" class="star_product_picture">
+                  <p class="products_name">小米智慧投影機 2</p></a>
+                  <p class="star_products_price">NT$ 14995</p>
+                </div>
+              </div>
+              <div class="star_products_contentbox" id="rainbow_border_top4">
+                <div>
+                  <a href="https://www.mi.com/tw/product/xiaomi-smart-circulating-air-purifier/" target="_blank"><img src="image/明星四.png" class="star_product_picture">
+                  <p class="products_name">Xiaomi 空氣循環淨化器</p></a>
+                  <p class="star_products_price">NT$ 11995</p>
+                </div>
+              </div>
+              <div class="star_products_contentbox_right" id="rainbow_border_top5">
+                <div>
+                  <a href="https://www.mi.com/tw/mi-vacuum-cleaner-mini/" target="_blank"><img src="image/明星五.png" class="star_product_picture">
+                  <p class="products_name">米家無線吸塵器 mini</p></a>
+                  <p class="star_products_price">NT$ 1095</p>
+                </div>
+              </div>
             </div> 
           </div>
         </div>
@@ -1121,23 +1307,23 @@
                 <a href="https://www.mi.com/tw/monitor65/" target="_blank"><img src="image/小米智慧顯示器65.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-monitor-q2-65/" target="_blank"  class="smart_tech_family_style";><img src="image/小米智慧顯示器65Q2.png" ></a>
-                <p class="products_name">Xiaomi 智慧顯示器 Q2 65</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-monitor-q2-65/" target="_blank"><img src="image/小米智慧顯示器65Q2.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧顯示器 Q2 65</p></a>
                 <p class="products_price">NT$ 35999</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-monitor-a2-55/" target="_blank" class="smart_tech_family_style";><img src="image/顯示器A2 55.png" ></a>
-                <p class="products_name">Xiaomi 智慧顯示器 A2 55型</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-monitor-a2-55/" target="_blank"><img src="image/顯示器A2 55.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧顯示器 A2 55型</p></a>
                 <p class="products_price">NT$ 19999</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-monitor-a2-43/" target="_blank" class="smart_tech_family_style";><img src="image/顯示器A243.png" ></a>
-                <p class="products_name">Xiaomi 智慧顯示器 A2 43型</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-monitor-a2-43/" target="_blank"><img src="image/顯示器A243.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧顯示器 A2 43型</p></a>
                 <p class="products_price">NT$ 15999</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/mi-desktop-monitor-27/" target="_blank" class="smart_tech_family_style";><img src="image/小米27螢幕.png" ></a>
-                <p class="products_name">小米 27 型電腦螢幕</p>
+                <a href="https://www.mi.com/tw/product/mi-desktop-monitor-27/" target="_blank"><img src="image/小米27螢幕.png" class="smart_tech_family_style">
+                <p class="products_name">小米 27 型電腦螢幕</p></a>
                 <p class="products_price">NT$ 5295</p>
               </div>
 
@@ -1145,23 +1331,23 @@
                 <a href="https://buy.mi.com/tw/search_books" target="_blank"><img src="image/xiaomi_book_s12.4.png" ></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/monitor34/" target="_blank" class="smart_tech_family_style";><img src="image/小米34螢幕.png" ></a>
-                <p class="products_name">小米34型曲面螢幕</p>
+                <a href="https://www.mi.com/tw/monitor34/" target="_blank"><img src="image/小米34螢幕.png" class="smart_tech_family_style">
+                <p class="products_name">小米34型曲面螢幕</p></a>
                 <p class="products_price">NT$ 12995</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/mi-23.8-desktop-monitor-1c/" target="_blank" class="smart_tech_family_style";><img src="image/小米23螢幕.png" ></a>
-                <p class="products_name">小米23.8型電腦螢幕1C</p>
+                <a href="https://www.mi.com/tw/mi-23.8-desktop-monitor-1c/" target="_blank"><img src="image/小米23螢幕.png" class="smart_tech_family_style">
+                <p class="products_name">小米23.8型電腦螢幕1C</p></a>
                 <p class="products_price">NT$ 4295</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-2k-gaming-monitor-27/" target="_blank" class="smart_tech_family_style";><img src="image/小米27電競螢幕.png" ></a>
-                <p class="products_name">Xiaomi 27型 2K 電競螢幕</p>
+                <a href="https://www.mi.com/tw/product/mi-2k-gaming-monitor-27/" target="_blank"><img src="image/小米27電競螢幕.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 27型 2K 電競螢幕</p></a>
                 <p class="products_price">NT$ 11995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3222600026" target="_blank" class="smart_tech_family_style";><img src="image/小米book套裝.png" ></a>
-                <p class="products_name_right">XiaomiBook S 12.4”+ Keyboard+充電器 套裝</p>
+                <a href="https://buy.mi.com/tw/item/3222600026" target="_blank"><img src="image/小米book套裝.png" class="smart_tech_family_style">
+                <p class="products_name_right">XiaomiBook S 12.4”+ Keyboard+充電器 套裝</p></a>
                 <p class="products_price">NT$ 24755</p>
               </div>
 
@@ -1169,23 +1355,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-truclean-w10ultra-wet-dry-vacuum/" target="_blank"><img src="image/洗地機.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-truclean-w10-pro-wet-dry-vacuum/" target="_blank" class="smart_tech_family_style";><img src="image/洗地1.png" ></a>
-                <p class="products_name">Xiaomi 無線洗地機 W10 Pro</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-truclean-w10-pro-wet-dry-vacuum/" target="_blank"><img src="image/洗地1.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 無線洗地機 W10 Pro</p></a>
                 <p class="products_price">NT$ 15995</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-robot-vacuum-s10/" target="_blank" class="smart_tech_family_style";><img src="image/洗地2.png" ></a>
-                <p class="products_name">Xiaomi 掃拖機器人 S10</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-robot-vacuum-s10/" target="_blank"><img src="image/洗地2.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 掃拖機器人 S10</p></a>
                 <p class="products_price">NT$ 7995</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-ultra-light-vacuum-cleaner/" target="_blank" class="smart_tech_family_style";><img src="image/洗地3.png" ></a>
-                <p class="products_name">Xiaomi 超輕量無線吸塵器</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-ultra-light-vacuum-cleaner/" target="_blank"><img src="image/洗地3.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 超輕量無線吸塵器</p></a>
                 <p class="products_price">NT$ 8995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/xiaomi-vacuum-cleaner-g11/" target="_blank" class="smart_tech_family_style";><img src="image/洗地4.png" ></a>
-                <p class="products_name">Xiaomi 無線吸塵器 G11</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-vacuum-cleaner-g11/" target="_blank"><img src="image/洗地4.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 無線吸塵器 G11</p></a>
                 <p class="products_price">NT$ 8995</p>
               </div>
 
@@ -1193,23 +1379,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-smart-air-purifier-4-pro/" target="_blank"><img src="image/空氣淨化器.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-air-purifier-4-lite/" target="_blank" class="smart_tech_family_style";><img src="image/空氣一.png" ></a>
-                <p class="products_name">Xiaomi 空氣淨化器 4 Lite</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-air-purifier-4-lite/" target="_blank"><img src="image/空氣一.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 空氣淨化器 4 Lite</p></a>
                 <p class="products_price">NT$ 3495</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3195200010" target="_blank" class="smart_tech_family_style";><img src="image/空氣二.png" ></a>
-                <p class="products_name_br">米家空氣淨化器濾芯 除甲醛增強版 S1</p>
+                <a href="https://buy.mi.com/tw/item/3195200010" target="_blank"><img src="image/空氣二.png" class="smart_tech_family_style">
+                <p class="products_name_br">米家空氣淨化器濾芯 除甲醛增強版 S1</p></a>
                 <p class="products_price">NT$ 795</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-purifying-fan/" target="_blank" class="smart_tech_family_style";><img src="image/空氣三.png" ></a>
-                <p class="products_name">Xiaomi 智慧無扇葉淨化風扇</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-purifying-fan/" target="_blank"><img src="image/空氣三.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧無扇葉淨化風扇</p></a>
                 <p class="products_price">NT$ 7995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-circulating-air-purifier/" target="_blank" class="smart_tech_family_style";><img src="image/空氣四.png" ></a>
-                <p class="products_name">Xiaomi 空氣循環淨化器</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-circulating-air-purifier/" target="_blank"><img src="image/空氣四.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 空氣循環淨化器</p></a>
                 <p class="products_price">NT$ 11995</p>
               </div>
 
@@ -1218,24 +1404,24 @@
               </div>
               <div class="smart_tech_family_content">
                 <span class="products_discount">8.2折</span>
-                <a href="https://www.mi.com/tw/product/mi-smart-band-6/" target="_blank" class="smart_tech_family_discount_style";><img src="image/手環一.png" ></a>
-                <p class="products_name">小米手環6</p>
+                <a href="https://www.mi.com/tw/product/mi-smart-band-6/" target="_blank"><img src="image/手環一.png" class="smart_tech_family_discount_style">
+                <p class="products_name">小米手環6</p></a>
                 <p class="products_price">NT$ 895</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-band-7/" target="_blank" class="smart_tech_family_style";><img src="image/手環二.png" ></a>
-                <p class="products_name">Xiaomi 手環7</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-band-7/" target="_blank"><img src="image/手環二.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 手環7</p></a>
                 <p class="products_price">NT$ 1195</p>
               </div>
               <div class="smart_tech_family_content">
                 <span class="products_discount">8.3折</span>
-                <a href="https://www.mi.com/tw/product/redmi-smart-band-pro/" target="_blank" class="smart_tech_family_discount_style";><img src="image/手環三.png" ></a>
-                <p class="products_name">Redmi 手環 Pro</p>
+                <a href="https://www.mi.com/tw/product/redmi-smart-band-pro/" target="_blank"><img src="image/手環三.png" class="smart_tech_family_discount_style">
+                <p class="products_name">Redmi 手環 Pro</p></a>
                 <p class="products_price">NT$ 995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/xiaomi-watch-s1-active/" target="_blank" class="smart_tech_family_style";><img src="image/手環四.png" ></a>
-                <p class="products_name">Xiaomi Watch S1 Active</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-watch-s1-active/" target="_blank"><img src="image/手環四.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi Watch S1 Active</p></a>
                 <p class="products_price">NT$ 4495</p>
               </div>
 
@@ -1243,23 +1429,23 @@
                 <a href="https://www.mi.com/tw/product/redmi-buds-3-lite/" target="_blank"><img src="image/rd-buds-3lite.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-buds-3t-pro/" target="_blank" class="smart_tech_family_style";><img src="image/耳機一.png" ></a>
-                <p class="products_name_br">Xiaomi buds 3T Pro 降噪藍牙耳機</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-buds-3t-pro/" target="_blank"><img src="image/耳機一.png" class="smart_tech_family_style">
+                <p class="products_name_br">Xiaomi buds 3T Pro 降噪藍牙耳機</p></a>
                 <p class="products_price">NT$ 3195</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-buds-3/" target="_blank" class="smart_tech_family_style";><img src="image/耳機二.png" ></a>
-                <p class="products_name">Xiaomi buds 3</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-buds-3/" target="_blank"><img src="image/耳機二.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi buds 3</p></a>
                 <p class="products_price">NT$ 2295</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/redmi-buds-4-pro/" target="_blank" class="smart_tech_family_style";><img src="image/耳機三.png" ></a>
-                <p class="products_name">Redmi Buds 4 Pro</p>
+                <a href="https://www.mi.com/tw/product/redmi-buds-4-pro/" target="_blank"><img src="image/耳機三.png" class="smart_tech_family_style">
+                <p class="products_name">Redmi Buds 4 Pro</p></a>
                 <p class="products_price">NT$ 1995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/redmi-buds-3/" target="_blank" class="smart_tech_family_style";><img src="image/耳機四.png" ></a>
-                <p class="products_name">Redmi Buds 3</p>
+                <a href="https://www.mi.com/tw/product/redmi-buds-3/" target="_blank"><img src="image/耳機四.png" class="smart_tech_family_style">
+                <p class="products_name">Redmi Buds 3</p></a>
                 <p class="products_price">NT$ 945</p>
               </div>
 
@@ -1267,23 +1453,23 @@
                 <a href="https://buy.mi.com/tw/item/3203400044" target="_blank"><img src="image/燈.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/mi-adjustable-smart-desk-lamp/" target="_blank" class="smart_tech_family_style";><img src="image/燈一.png" ></a>
-                <p class="products_name">米家檯燈 Pro</p>
+                <a href="https://www.mi.com/tw/mi-adjustable-smart-desk-lamp/" target="_blank"><img src="image/燈一.png" class="smart_tech_family_style">
+                <p class="products_name">米家檯燈 Pro</p></a>
                 <p class="products_price">NT$ 1795</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-computer-monitor-light-bar/" target="_blank" class="smart_tech_family_style";><img src="image/燈二.png" ></a>
-                <p class="products_name">米家螢幕掛燈</p>
+                <a href="https://www.mi.com/tw/product/mi-computer-monitor-light-bar/" target="_blank"><img src="image/燈二.png" class="smart_tech_family_style">
+                <p class="products_name">米家螢幕掛燈</p></a>
                 <p class="products_price">NT$ 995</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/mi-led-desk-lamp-1s/" target="_blank" class="smart_tech_family_style";><img src="image/燈三.png" ></a>
-                <p class="products_name">米家 LED 智慧檯燈 1S</p>
+                <a href="https://www.mi.com/tw/mi-led-desk-lamp-1s/" target="_blank"><img src="image/燈三.png" class="smart_tech_family_style">
+                <p class="products_name">米家 LED 智慧檯燈 1S</p></a>
                 <p class="products_price">NT$ 995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3201200025" target="_blank" class="smart_tech_family_style";><img src="image/燈四.png" ></a>
-                <p class="products_name">米家 LED 智慧燈泡 Lite 彩光版</p>
+                <a href="https://buy.mi.com/tw/item/3201200025" target="_blank"><img src="image/燈四.png" class="smart_tech_family_style">
+                <p class="products_name">米家 LED 智慧燈泡 Lite 彩光版</p></a>
                 <p class="products_price">NT$ 395</p>
               </div>
 
@@ -1291,23 +1477,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-smart-blender/" target="_blank"><img src="image/調理機.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3194500016" target="_blank" class="smart_tech_family_style";><img src="image/調理一.png" ></a>
-                <p class="products_name">米家調理機</p>
+                <a href="https://buy.mi.com/tw/item/3194500016" target="_blank"><img src="image/調理一.png" class="smart_tech_family_style">
+                <p class="products_name">米家調理機</p></a>
                 <p class="products_price">NT$ 895</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-electric-kettle-2/" target="_blank" class="smart_tech_family_style";><img src="image/調理二.png" ></a>
-                <p class="products_name">小米電水壺 2</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-electric-kettle-2/" target="_blank"><img src="image/調理二.png" class="smart_tech_family_style">
+                <p class="products_name">小米電水壺 2</p></a>
                 <p class="products_price">NT$ 895</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/mi-induction-cooker/" target="_blank" class="smart_tech_family_style";><img src="image/調理三.png" ></a>
-                <p class="products_name">米家電磁爐</p>
+                <a href="https://www.mi.com/tw/mi-induction-cooker/" target="_blank"><img src="image/調理三.png" class="smart_tech_family_style">
+                <p class="products_name">米家電磁爐</p></a>
                 <p class="products_price">NT$ 1795</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3184600052" target="_blank" class="smart_tech_family_style";><img src="image/調理四.png" ></a>
-                <p class="products_name">知吾煮湯鍋</p>
+                <a href="https://buy.mi.com/tw/item/3184600052" target="_blank"><img src="image/調理四.png" class="smart_tech_family_style">
+                <p class="products_name">知吾煮湯鍋</p></a>
                 <p class="products_price">NT$ 595</p>
               </div>
 
@@ -1315,23 +1501,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-water-ionic-hair-dryer-h500/" target="_blank"><img src="image/吹風機.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-ionic-hair-dryer-h300/" target="_blank" class="smart_tech_family_style";><img src="image/吹風一.png" ></a>
-                <p class="products_name">小米負離子吹風機 H300</p>
+                <a href="https://www.mi.com/tw/product/mi-ionic-hair-dryer-h300/" target="_blank"><img src="image/吹風一.png" class="smart_tech_family_style">
+                <p class="products_name">小米負離子吹風機 H300</p></a>
                 <p class="products_price">NT$ 795</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-electric-toothbrush-t700/" target="_blank" class="smart_tech_family_style";><img src="image/吹風二.png" ></a>
-                <p class="products_name">Xiaomi 聲波電動牙刷 T700</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-electric-toothbrush-t700/" target="_blank"><img src="image/吹風二.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 聲波電動牙刷 T700</p></a>
                 <p class="products_price">NT$ 1995</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3194800029" target="_blank" class="smart_tech_family_style";><img src="image/吹風三.png" ></a>
-                <p class="products_name">米家聲波電動牙刷 T500</p>
+                <a href="https://buy.mi.com/tw/item/3194800029" target="_blank"><img src="image/吹風三.png" class="smart_tech_family_style">
+                <p class="products_name">米家聲波電動牙刷 T500</p></a>
                 <p class="products_price">NT$ 995</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3201200026" target="_blank" class="smart_tech_family_style";><img src="image/吹風四.png" ></a>
-                <p class="products_name">米家電動刮鬍刀 S500</p>
+                <a href="https://buy.mi.com/tw/item/3201200026" target="_blank"><img src="image/吹風四.png" class="smart_tech_family_style">
+                <p class="products_name">米家電動刮鬍刀 S500</p></a>
                 <p class="products_price">NT$ 995</p>
               </div>
 
@@ -1339,23 +1525,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-smart-camera-c300/" target="_blank"><img src="image/攝影機.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3203900020" target="_blank" class="smart_tech_family_style";><img src="image/攝影一.png" ></a>
-                <p class="products_name">小米行車記錄器 2</p>
+                <a href="https://buy.mi.com/tw/item/3203900020" target="_blank"><img src="image/攝影一.png" class="smart_tech_family_style">
+                <p class="products_name">小米行車記錄器 2</p></a>
                 <p class="products_price">NT$ 1795</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/mi-20w-wireless-car-charger/" target="_blank" class="smart_tech_family_style";><img src="image/攝影二.png" ></a>
-                <p class="products_name">小米無線車充</p>
+                <a href="https://www.mi.com/tw/mi-20w-wireless-car-charger/" target="_blank"><img src="image/攝影二.png" class="smart_tech_family_style">
+                <p class="products_name">小米無線車充</p></a>
                 <p class="products_price">NT$ 945</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-doorbell-3/" target="_blank" class="smart_tech_family_style";><img src="image/攝影三.png" ></a>
-                <p class="products_name">Xiaomi 智慧門鈴 3</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-doorbell-3/" target="_blank"><img src="image/攝影三.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧門鈴 3</p></a>
                 <p class="products_price">NT$ 1895</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3202200060" target="_blank" class="smart_tech_family_style";><img src="image/攝影四.jpg" ></a>
-                <p class="products_name">小米液晶手寫板</p>
+                <a href="https://buy.mi.com/tw/item/3202200060" target="_blank"><img src="image/攝影四.jpg" class="smart_tech_family_style">
+                <p class="products_name">小米液晶手寫板</p></a>
                 <p class="products_price">NT$ 495</p>
               </div>
 
@@ -1363,23 +1549,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-karaoke-microphone/" target="_blank"><img src="image/麥克風.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-portable-bluetooth-speaker/" target="_blank" class="smart_tech_family_style";><img src="image/麥克一.jpg" ></a>
-                <p class="products_name">小米戶外藍牙喇叭 (16W)</p>
+                <a href="https://www.mi.com/tw/product/mi-portable-bluetooth-speaker/" target="_blank"><img src="image/麥克一.jpg" class="smart_tech_family_style">
+                <p class="products_name">小米戶外藍牙喇叭 (16W)</p></a>
                 <p class="products_price">NT$ 1195</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-wifi-range-extender-ac1200/" target="_blank" class="smart_tech_family_style";><img src="image/麥克二.png" ></a>
-                <p class="products_name">小米 WiFi 訊號延伸器 AC1200</p>
+                <a href="https://www.mi.com/tw/product/mi-wifi-range-extender-ac1200/" target="_blank"><img src="image/麥克二.png" class="smart_tech_family_style">
+                <p class="products_name">小米 WiFi 訊號延伸器 AC1200</p></a>
                 <p class="products_price">NT$ 695</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3220100013" target="_blank" class="smart_tech_family_style";><img src="image/麥克三.png" ></a>
-                <p class="products_name">Xiaomi 路由器 AC1200</p>
+                <a href="https://buy.mi.com/tw/item/3220100013" target="_blank"><img src="image/麥克三.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 路由器 AC1200</p></a>
                 <p class="products_price">NT$ 795</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-lightstrip/" target="_blank" class="smart_tech_family_style";><img src="image/麥克四.png" ></a>
-                <p class="products_name">Xiaomi 智慧彩光燈帶</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-lightstrip/" target="_blank"><img src="image/麥克四.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧彩光燈帶</p></a>
                 <p class="products_price">NT$ 1495</p>
               </div>
 
@@ -1387,23 +1573,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-massage-gun-mini/" target="_blank"><img src="image/筋膜槍.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3193500035" target="_blank" class="smart_tech_family_style";><img src="image/按摩一.png" ></a>
-                <p class="products_name">小衛質品泡沫洗手液（6瓶裝）</p>
+                <a href="https://buy.mi.com/tw/item/3193500035" target="_blank"><img src="image/按摩一.png" class="smart_tech_family_style">
+                <p class="products_name">小衛質品泡沫洗手液（6瓶裝）</p></a>
                 <p class="products_price">NT$ 430</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3203600057" target="_blank" class="smart_tech_family_style";><img src="image/按摩二.png" ></a>
-                <p class="products_name">米家自動感應洗手機 單機版</p>
+                <a href="https://buy.mi.com/tw/item/3203600057" target="_blank"><img src="image/按摩二.png" class="smart_tech_family_style">
+                <p class="products_name">米家自動感應洗手機 單機版</p></a>
                 <p class="products_price">NT$ 295</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3192100001" target="_blank" class="smart_tech_family_style";><img src="image/按摩三.png" ></a>
-                <p class="products_name">小米體重計 2</p>
+                <a href="https://buy.mi.com/tw/item/3192100001" target="_blank"><img src="image/按摩三.png" class="smart_tech_family_style">
+                <p class="products_name">小米體重計 2</p></a>
                 <p class="products_price">NT$ 395</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3200200016" target="_blank" class="smart_tech_family_style";><img src="image/按摩四.png" ></a>
-                <p class="products_name">米家電動起子機</p>
+                <a href="https://buy.mi.com/tw/item/3200200016" target="_blank"><img src="image/按摩四.png" class="smart_tech_family_style">
+                <p class="products_name">米家電動起子機</p></a>
                 <p class="products_price">NT$ 895</p>
               </div>
 
@@ -1411,23 +1597,23 @@
                 <a href="https://buy.mi.com/tw/item/3222600019" target="_blank"><img src="image/延長線.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-power-strip-20w-fast-charge/" target="_blank" class="smart_tech_family_style";><img src="image/延長一.png" ></a>
-                <p class="products_name_right">Xiaomi 智慧延長線 20W 快充版</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-power-strip-20w-fast-charge/" target="_blank"><img src="image/延長一.png" class="smart_tech_family_style">
+                <p class="products_name_right">Xiaomi 智慧延長線 20W 快充版</p></a>
                 <p class="products_price">NT$ 695</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-33w-wall-charger-type-a-type-c-us/" target="_blank" class="smart_tech_family_style";><img src="image/延長二.png" ></a>
-                <p class="products_name">小米 33W 快速充電器 1A1C版</p>
+                <a href="https://www.mi.com/tw/product/mi-33w-wall-charger-type-a-type-c-us/" target="_blank"><img src="image/延長二.png" class="smart_tech_family_style">
+                <p class="products_name">小米 33W 快速充電器 1A1C版</p></a>
                 <p class="products_price">NT$ 325</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-65w-gan-charger/" target="_blank" class="smart_tech_family_style";><img src="image/延長三.png" ></a>
-                <p class="products_name_br">Xiaomi GaN充電器 65W 1A1C 版</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-65w-gan-charger/" target="_blank"><img src="image/延長三.png" class="smart_tech_family_style">
+                <p class="products_name_br">Xiaomi GaN充電器 65W 1A1C 版</p></a>
                 <p class="products_price">NT$ 765</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/xiaomi-33w-charging-combo-type-a/" target="_blank" class="smart_tech_family_style";><img src="image/延長四.png" ></a>
-                <p class="products_name">Xiaomi 33W 充電器套裝</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-33w-charging-combo-type-a/" target="_blank"><img src="image/延長四.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 33W 充電器套裝</p></a>
                 <p class="products_price">NT$ 345</p>
               </div>
 
@@ -1435,23 +1621,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-33w-power-bank-10000mah-pocket-edition-pro/" target="_blank"><img src="image/行動電源.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/mi-50w-power-bank-20000/" target="_blank" class="smart_tech_family_style";><img src="image/行動一.png" ></a>
-                <p class="products_name">Xiaomi 行動電源 20000 50W</p>
+                <a href="https://www.mi.com/tw/product/mi-50w-power-bank-20000/" target="_blank"><img src="image/行動一.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 行動電源 20000 50W</p></a>
                 <p class="products_price">NT$ 1095</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-50w-wireless-charging-stand/" target="_blank" class="smart_tech_family_style";><img src="image/行動二.png" ></a>
-                <p class="products_name_50w">Xiaomi 直立風冷無線充電座 50W</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-50w-wireless-charging-stand/" target="_blank"><img src="image/行動二.png" class="smart_tech_family_style">
+                <p class="products_name_50w">Xiaomi 直立風冷無線充電座 50W</p></a>
                 <p class="products_price">NT$ 1395</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3200700037" target="_blank" class="smart_tech_family_style";><img src="image/行動三.png" ></a>
-                <p class="products_name">20000 小米行動電源 3 快充版</p>
+                <a href="https://buy.mi.com/tw/item/3200700037" target="_blank"><img src="image/行動三.png" class="smart_tech_family_style">
+                <p class="products_name">20000 小米行動電源 3 快充版</p></a>
                 <p class="products_price">NT$ 665</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://www.mi.com/tw/product/xiaomi-10w-wireless-power-bank-10000/" target="_blank" class="smart_tech_family_style";><img src="image/行動四.png" ></a>
-                <p class="products_name">Xiaomi 無線行動電源 10000</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-10w-wireless-power-bank-10000/" target="_blank"><img src="image/行動四.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 無線行動電源 10000</p></a>
                 <p class="products_price">NT$ 695</p>
               </div>
 
@@ -1459,23 +1645,23 @@
                 <a href="https://www.mi.com/tw/product/xiaomi-smart-pet-fountain/" target="_blank"><img src="image/寵物飲水機.jpg" style="height: 300px;"></a>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-temperature-and-humidity-monitor-clock/" target="_blank" class="smart_tech_family_style";><img src="image/寵物一.png" ></a>
-                <p class="products_name">Xiaomi 電子溫濕度計 Pro</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-temperature-and-humidity-monitor-clock/" target="_blank"><img src="image/寵物一.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 電子溫濕度計 Pro</p></a>
                 <p class="products_price">NT$ 495</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://www.mi.com/tw/product/xiaomi-smart-pet-food-feeder/" target="_blank" class="smart_tech_family_style";><img src="image/寵物二.png" ></a>
-                <p class="products_name">Xiaomi 智慧寵物餵食器</p>
+                <a href="https://www.mi.com/tw/product/xiaomi-smart-pet-food-feeder/" target="_blank"><img src="image/寵物二.png" class="smart_tech_family_style">
+                <p class="products_name">Xiaomi 智慧寵物餵食器</p></a>
                 <p class="products_price">NT$ 2695</p>
               </div>
               <div class="smart_tech_family_content">
-                <a href="https://buy.mi.com/tw/item/3202100014" target="_blank" class="smart_tech_family_style";><img src="image/寵物三.png" ></a>
-                <p class="products_name">米家藍牙溫濕度計 2</p>
+                <a href="https://buy.mi.com/tw/item/3202100014" target="_blank"><img src="image/寵物三.png" class="smart_tech_family_style">
+                <p class="products_name">米家藍牙溫濕度計 2</p></a>
                 <p class="products_price">NT$ 135</p>
               </div>
               <div class="smart_tech_family_content_right">
-                <a href="https://buy.mi.com/tw/item/3200800016" target="_blank" class="smart_tech_family_style";><img src="image/寵物四.png" ></a>
-                <p class="products_name">小米無線雙模滑鼠 靜音版</p>
+                <a href="https://buy.mi.com/tw/item/3200800016" target="_blank"><img src="image/寵物四.png" class="smart_tech_family_style">
+                <p class="products_name">小米無線雙模滑鼠 靜音版</p></a>
                 <p class="products_price">NT$ 365</p>
               </div>
             </div>
