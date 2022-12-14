@@ -1,3 +1,13 @@
+const ProductType = {
+    XIAOMI_PHONE: 0,
+    REDMI_PHONE: 1,
+    POCO_PHONE: 2,
+    SMART_FAMILY: 3,
+    SMART_TECH: 4,
+    XIAOMI_ACCESSORIES: 5,
+    XIAOMI_SERVICE: 6
+}
+
 function change_pic1() {
     document.getElementsByClassName("test").innerHTML = "<img src='image/double12.png'>";
 }
@@ -34,4 +44,44 @@ function change_pic11() {
 }
 function change_pic12() {
     document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main12.png'>";
+}
+
+function showProductMenu(type) {
+    switch (type) {
+        case ProductType.XIAOMI_PHONE:
+            document.getElementById("dropMenu").style.display = "block";
+            break;
+        case ProductType.REDMI_PHONE:
+            break;
+        case ProductType.POCO_PHONE:
+            break;
+        case ProductType.SMART_FAMILY:
+            break;
+        case ProductType.SMART_TECH:
+            break;
+        case ProductType.XIAOMI_ACCESSORIES:
+            break;
+        default:
+            break;
+    }
+}
+
+function hideProductMenu(type) {
+    switch (type) {
+        case ProductType.XIAOMI_PHONE:
+            document.getElementById("dropMenu").style.display = "none";
+            break;
+        case ProductType.REDMI_PHONE:
+            break;
+        case ProductType.POCO_PHONE:
+            break;
+        case ProductType.SMART_FAMILY:
+            break;
+        case ProductType.SMART_TECH:
+            break;
+        case ProductType.XIAOMI_ACCESSORIES:
+            break;
+        default:
+            break;
+    }
 }
