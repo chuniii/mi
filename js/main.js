@@ -13,7 +13,7 @@ function change_pic1() {
 }
 
 function change_pic2() {
-    document.getElementsByClassName("test").innerHTML = " ";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main2.png'>";
 }
 function change_pic3() {
     document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main3.jpg'>";
