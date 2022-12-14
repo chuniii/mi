@@ -87,6 +87,7 @@ a:hover {
   height: 100px;
   margin: 0 147px;
   display: flex;
+  justify-content: center;
 }
 
 .xiaomi_logo {
@@ -141,30 +142,27 @@ a:hover {
 
 /* 小米手機hover下拉選單 */
 
-
-.dropdown1 {
-  display: inline-block;
-  position: relative;
-  float: left;
-
-
-}
-
-.xiaomi_cellphone_drop_content {
-  width: 1520px;
+.xiaomi_cellphone_drop_menu {
+  position: absolute;
+  top: 328px;
+  width: 100%;
   height: 230px;
-  margin: 0;
   border-top: solid 1px #b0b0b0;
   background-color: white;
   display: none;
-  position: absolute;
-  float: left;
-  z-index: 20;
+  z-index: 10;
 }
 
-.dropdown1:hover.xiaomi_cellphone_drop_content {
-  display: block;
+.xiaomi_cellphone_drop_container {
+  width: 1226px;
+  margin: 0 auto;
 }
+
+.xiaomi_cellphone_drop_container.wrapper {
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .redmi_cellphone {
   width: 113.13px;
