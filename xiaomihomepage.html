@@ -53,23 +53,23 @@
     <div class="money_on_the_hand"></div>
     <div class="header_content">
 
-      <div class="xiaomi_cellphone" onmouseenter="showProductMenu(0)" onmouseleave="hideProductMenu(0)">
+      <div class="xiaomi_cellphone" onmouseenter="showProductMenu(0)">
         <p class="header_content_decoration">Xiaomi手機</p>
       </div>
 
-      <div class="redmi_cellphone">
+      <div class="redmi_cellphone" onmouseenter="showProductMenu(1)">
         <p class="header_content_decoration">Redmi手機</p>
       </div>
-      <div class="POCO_cellphone">
+      <div class="POCO_cellphone" onmouseenter="showProductMenu(2)">
         <p class="header_content_decoration">POCO手機</p>
       </div>
-      <div class="smart_family">
+      <div class="smart_family" onmouseenter="showProductMenu(3)">
         <p class="header_content_decoration">智慧家庭</p>
       </div>
-      <div class="smart_technology">
+      <div class="smart_technology" onmouseenter="showProductMenu(4)">
         <p class="header_content_decoration">智慧科技</p>
       </div>
-      <div class="xiaomi_accessories">
+      <div class="xiaomi_accessories" onmouseenter="showProductMenu(5)">
         <p class="header_content_decoration">配件</p>
       </div>
       <div class="xiaomi_service">
@@ -87,51 +87,272 @@
     </div>
   </div>
 
-  <div class="xiaomi_cellphone_drop_menu" id="dropMenu">
+  <div class="xiaomi_cellphone_drop_menu" id="dropMenu_xiaomi" onmouseleave="hideProductMenu(0)">
     <div class="xiaomi_cellphone_drop_container">
       <div class="xiaomi_cellphone_drop_container wrapper">
-        <a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
             src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
-          <p>Xiaomi 12T Pro</p>
+          <p class="drop_products_name">Xiaomi 12T Pro</p>
         </a>
-        <p class="products_name">NT$19,999</p>
+        <p style="color:#ff6907">NT$19,999</p></div>
 
-        <!-- <a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
-          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140">
-        <p>Xiaomi 12T</p>
-      </a>
-      <p class="products_name">NT$16,999</p>
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140" >
+        <p class="drop_products_name">Xiaomi 12T</p></a>
+        
+        <p style="color:#ff6907">NT$16,999</p></div>
 
-      <a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
           src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
-        <p>Xiaomi 12 Pro 5G</p>
-      </a>
-      <p class="products_name">NT$26,999</p>
+        <p class="drop_products_name">Xiaomi 12 Pro 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$26,999</p></div>
 
-      <a href="https://www.mi.com/tw/product/xiaomi-12"><img
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12"><img
           src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
-        <p>Xiaomi 12 5G</p>
-      </a>
-      <p class="products_name">NT$23,999</p>
+        <p class="drop_products_name">Xiaomi 12 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$23,999</p></div>
 
-      <a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
           src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
-        <p>Xiaomi 12 Lite</p>
-      </a>
-      <p class="products_name">NT$13,999</p>
+        <p class="drop_products_name">Xiaomi 12 Lite</p>
+        </a>
+        <p style="color:#ff6907">NT$13,999</p></div>
 
-      <a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
           src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
-        <p>Xiaomi 12X 5G</p>
-      </a>
-      <p class="products_name">NT$16,999</p> -->
+        <p class="drop_products_name">Xiaomi 12X 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$16,999</p></div>
       </div>
     </div>
   </div>
+<!-- 下拉選單2 -->
+  <div class="xiaomi_cellphone_drop_menu" id="dropMenu_redmi" onmouseleave="hideProductMenu(1)">
+    <div class="xiaomi_cellphone_drop_container">
+      <div class="xiaomi_cellphone_drop_container wrapper">
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
+            src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
+          <p class="drop_products_name">Xiaomi 12T Pro</p>
+        </a>
+        <p style="color:#ff6907">NT$19,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140" >
+        <p class="drop_products_name">Xiaomi 12T</p></a>
+        
+        <p style="color:#ff6907">NT$16,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Pro 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$26,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$23,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
+          src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Lite</p>
+        </a>
+        <p style="color:#ff6907">NT$13,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12X 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$16,999</p></div>
+      </div>
+    </div>
+  </div>
+<!-- 下拉選單3 -->
+  <div class="xiaomi_cellphone_drop_menu" id="dropMenu_poco" onmouseleave="hideProductMenu(2)">
+    <div class="xiaomi_cellphone_drop_container">
+      <div class="xiaomi_cellphone_drop_container wrapper">
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
+            src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
+          <p class="drop_products_name">Xiaomi 12T Pro</p>
+        </a>
+        <p style="color:#ff6907">NT$19,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140" >
+        <p class="drop_products_name">Xiaomi 12T</p></a>
+        
+        <p style="color:#ff6907">NT$16,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Pro 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$26,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$23,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
+          src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Lite</p>
+        </a>
+        <p style="color:#ff6907">NT$13,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12X 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$16,999</p></div>
+      </div>
+    </div>
+  </div>
+<!-- 下拉選單4 -->
+  <div class="xiaomi_cellphone_drop_menu" id="dropMenu_family" onmouseleave="hideProductMenu(3)">
+    <div class="xiaomi_cellphone_drop_container">
+      <div class="xiaomi_cellphone_drop_container wrapper">
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
+            src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
+          <p class="drop_products_name">Xiaomi 12T Pro</p>
+        </a>
+        <p style="color:#ff6907">NT$19,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140" >
+        <p class="drop_products_name">Xiaomi 12T</p></a>
+        
+        <p style="color:#ff6907">NT$16,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Pro 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$26,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$23,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
+          src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Lite</p>
+        </a>
+        <p style="color:#ff6907">NT$13,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12X 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$16,999</p></div>
+      </div>
+    </div>
+  </div>
+<!-- 下拉選單5 -->
+  <div class="xiaomi_cellphone_drop_menu" id="dropMenu_tech" onmouseleave="hideProductMenu(4)">
+    <div class="xiaomi_cellphone_drop_container">
+      <div class="xiaomi_cellphone_drop_container wrapper">
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
+            src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
+          <p class="drop_products_name">Xiaomi 12T Pro</p>
+        </a>
+        <p style="color:#ff6907">NT$19,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140" >
+        <p class="drop_products_name">Xiaomi 12T</p></a>
+        
+        <p style="color:#ff6907">NT$16,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Pro 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$26,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$23,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
+          src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Lite</p>
+        </a>
+        <p style="color:#ff6907">NT$13,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12X 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$16,999</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- 下拉選單6 -->
+  <div class="xiaomi_cellphone_drop_menu" id="dropMenu_accessories" onmouseleave="hideProductMenu(5)">
+    <div class="xiaomi_cellphone_drop_container">
+      <div class="xiaomi_cellphone_drop_container wrapper">
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img
+            src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140">
+          <p class="drop_products_name">Xiaomi 12T Pro</p>
+        </a>
+        <p style="color:#ff6907">NT$19,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12t/"><img 
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140" >
+        <p class="drop_products_name">Xiaomi 12T</p></a>
+        
+        <p style="color:#ff6907">NT$16,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-pro"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Pro 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$26,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12"><img
+          src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$23,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12-lite/"><img
+          src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12 Lite</p>
+        </a>
+        <p style="color:#ff6907">NT$13,999</p></div>
+
+        <div class="drop_menu_pictures"><a href="https://www.mi.com/tw/product/xiaomi-12x/"><img
+          src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140">
+        <p class="drop_products_name">Xiaomi 12X 5G</p>
+        </a>
+        <p style="color:#ff6907">NT$16,999</p></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
   <div class="middle_container">
     <div class="main_container">
       <div class="main_container_slider">
-        <div id="right_arrow_box"></div>
+        <div id="right_arrow_box">
+
+        </div>
         <div id="left_arrow_box"></div>
         <div class="circle_change_pictures">
           <i class="fi fi-ss-circle-small" id="circle1" onclick="change_pic1()" style="cursor: pointer;"></i>
@@ -193,17 +414,7 @@
         <a href="https://event.mi.com/tw/2022-midouble12" id="carouselsLink">
           <img src="image/double12.png">
         </a>
-        <!-- <img src="image/main2.png"> 
-                <img src="image/main3.jpg">
-                <img src="image/main4.jpg">
-                <img src="image/main5.jpg">
-                <img src="image/main6.jpg">
-                <img src="image/main7.png">
-                <img src="image/main8.png">
-                <img src="image/main9.png">
-                <img src="image/main10.png">
-                <img src="image/main11.jpg">
-                <img src="image/main12.png">-->
+        
 
       </div>
       <div class="main_container_advertise">

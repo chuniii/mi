@@ -28,7 +28,7 @@
   background-color: #212121;
 }
 
-.topbar.devide {
+.devide {
   margin: 0 20px;
   color: #424242;
 }
@@ -100,6 +100,7 @@ a:hover {
   background-position: left center;
   background-repeat: no-repeat;
   overflow: hidden;
+
 }
 
 .xiaomi_logo_change {
@@ -113,6 +114,9 @@ a:hover {
   background-image: url('image/money.gif');
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 100;
+
 }
 
 .header_content {
@@ -154,15 +158,25 @@ a:hover {
 }
 
 .xiaomi_cellphone_drop_container {
-  width: 1226px;
-  margin: 0 auto;
+  width: 1186px;
+  margin: 20px auto;
+  display: block;
+  
 }
 
-.xiaomi_cellphone_drop_container.wrapper {
+/* .xiaomi_cellphone_drop_container.wrapper { 
   padding: 0;
   box-sizing: border-box;
-}
+}*/
 
+.drop_menu_pictures {
+  width: 140px;
+  height: 200px;
+  float: left;
+  text-align: center;
+  margin-right : 56px;
+
+}
 
 .redmi_cellphone {
   width: 113.13px;
@@ -295,6 +309,7 @@ a:hover {
   overflow: hidden;
   position: absolute;
   cursor: pointer;
+  z-index: 100;
 }
 
 #right_arrow_box :hover {
@@ -310,6 +325,7 @@ a:hover {
   overflow: hidden;
   position: absolute;
   cursor: pointer;
+  z-index: 100;
 }
 
 .left_choose_list {
@@ -339,7 +355,7 @@ a:hover {
   line-height: 16px;
 }
 
-.left_choose_list:hover {
+.left_choose_list :hover {
   background-color: #ff6700;
 }
 
@@ -576,6 +592,12 @@ a:hover {
   box-shadow: none;
 }
 
+.drop_products_name {
+  color: #212121;
+  margin: 0 0 5px 0;
+  text-align: center;
+  box-shadow: none;
+}
 
 
 .products_name_right {
@@ -837,6 +859,10 @@ a:hover {
   color: #424242;
 }
 
+.follow_us :hover {
+    color: #424242;
+}
+
 .facebook {
   color: #b0b0b0;
   font-size: 16px;
@@ -940,7 +966,7 @@ a:hover {
 .other_information {
   width: 305.5px;
   height: 258px;
-  margin: 40px 0 40px-920.5px;
+  margin: 40px 0 40px -920.5px;
   display: inline-block;
   float: right;
 }

@@ -5,61 +5,65 @@ const ProductType = {
     SMART_FAMILY: 3,
     SMART_TECH: 4,
     XIAOMI_ACCESSORIES: 5,
-    XIAOMI_SERVICE: 6
 }
 
 function change_pic1() {
-    document.getElementsByClassName("test").innerHTML = "<img src='image/double12.png'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/double12.png'>";
 }
 
 function change_pic2() {
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main2.png'>";
 }
 function change_pic3() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main3.jpg'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main3.jpg'>";
 }
 function change_pic4() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main4.jpg'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";
 }
 function change_pic5() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main5.jpg'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main5.jpg'>";
 }
 function change_pic6() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main6.jpg'>";
+    document.getElementsByClassName("carouselsLink").innerHTML = "<img src='image/main6.jpg'>";
 }
 function change_pic7() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main7.png'>";
+    document.getElementsByClassName("carouselsLink").innerHTML = "<img src='image/main7.png'>";
 }
 function change_pic8() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main8.png'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main8.png'>";
 }
 function change_pic9() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main9.png'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main9.png'>";
 }
 function change_pic10() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main10.png'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main10.png'>";
 }
 function change_pic11() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main11.jpg'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
 }
 function change_pic12() {
-    document.getElementsByClassName("main_container_slider").innerHTML = "<img src='image/main12.png'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";
 }
 
 function showProductMenu(type) {
     switch (type) {
         case ProductType.XIAOMI_PHONE:
-            document.getElementById("dropMenu").style.display = "block";
+            document.getElementById("dropMenu_xiaomi").style.display = "block";
             break;
         case ProductType.REDMI_PHONE:
+             document.getElementById("dropMenu_redmi").style.display = "block";
             break;
         case ProductType.POCO_PHONE:
+             document.getElementById("dropMenu_poco").style.display = "block";
             break;
         case ProductType.SMART_FAMILY:
+             document.getElementById("dropMenu_family").style.display = "block";
             break;
         case ProductType.SMART_TECH:
+             document.getElementById("dropMenu_tech").style.display = "block";
             break;
         case ProductType.XIAOMI_ACCESSORIES:
+             document.getElementById("dropMenu_accessories").style.display = "block";
             break;
         default:
             break;
@@ -69,17 +73,22 @@ function showProductMenu(type) {
 function hideProductMenu(type) {
     switch (type) {
         case ProductType.XIAOMI_PHONE:
-            document.getElementById("dropMenu").style.display = "none";
+            document.getElementById("dropMenu_xiaomi").style.display = "none";
             break;
         case ProductType.REDMI_PHONE:
+             document.getElementById("dropMenu_redmi").style.display = "none";
             break;
         case ProductType.POCO_PHONE:
+             document.getElementById("dropMenu_poco").style.display = "none";
             break;
         case ProductType.SMART_FAMILY:
+             document.getElementById("dropMenu_family").style.display = "none";
             break;
         case ProductType.SMART_TECH:
+             document.getElementById("dropMenu_tech").style.display = "none";
             break;
         case ProductType.XIAOMI_ACCESSORIES:
+             document.getElementById("dropMenu_accessories").style.display = "none";
             break;
         default:
             break;
