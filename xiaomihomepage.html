@@ -19,8 +19,12 @@
     <i class="close_notify">×</i>
   </div>
 
-  <a href="https://event.mi.com/tw/2022-midouble12">
-    <div class="advertise"></div>
+  <a href="https://event.mi.com/tw/2022-michristmasday">
+    <div class="advertise">
+      <div class="advertise_products_animation">
+        <p class="close_advertise">×</p>
+      </div>
+    </div>
   </a>
 
   <div class="topbar">
@@ -79,14 +83,14 @@
     <div class="search_item">
       <div class="search_text">
         <p class="search_product_text">搜尋商品</p>
-        <a href="https://www.mi.com/tw/product/xiaomi-12-pro/" class="search_keyword">Xiaomi 12 系列</a>
+        <a href="https://www.mi.com/tw/product/xiaomi-12-pro/" class="search_keyword">Xiaomi 30 型 電競曲面螢幕</a>
       </div>
       <div class="search_iconbox">
         <i class="fi fi-br-search magnifier"></i>
       </div>
     </div>
   </div>
-
+<!-- 下拉選單1 -->
   <div class="xiaomi_cellphone_drop_menu" id="dropMenu_xiaomi" onmouseleave="hideProductMenu(0)">
     <div class="xiaomi_cellphone_drop_container">
   
@@ -324,24 +328,93 @@
   <div class="middle_container">
     <div class="main_container">
       <div class="main_container_slider">
-         <div id="right_arrow_box"></div> 
-         <div id="left_arrow_box"></div> 
+
+        <!-- 側邊選單展開 -->
+        <div class="left_choose_list1_unfold" id="dropMenu_cellphone"> 
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
+              <p class="list_unfold_text">Xiaomi 12T 系列</p>
+              <div class="list_unfold_space"></div>
+            </a>
+          </div>
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/poco-x4-gt/"><img src="https://i01.appmifile.com/webfile/globalimg/summer/x4-gt-blue!40x40.png">
+              <p class="list_unfold_text">POCO X4 GT</p>
+              <div class="list_unfold_space"></div></a>
+          </div>
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/redmi-10c/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Blackredmi10c!40x40.png">
+              <p class="list_unfold_text">Redmi 10C</p>
+              <div class="list_unfold_space"></div></a>
+          </div>
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/xiaomi-12-pro/"><img src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro!40x40.png">
+              <p class="list_unfold_text">Xiaomi 12 系列</p>
+              <div class="list_unfold_space"></div></a>
+          </div>
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/poco-c40/"><img src="https://i01.appmifile.com/webfile/globalimg/summer/pocp-c40!40x40.png">
+              <p class="list_unfold_text">POCO C40 </p>
+              <div class="list_unfold_space"></div></a>
+          </div> 
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/redmi-10a/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/redmi10a!40x40.png">
+              <p class="list_unfold_text">Redmi 10A</p>
+              <div class="list_unfold_space"></div></a>
+          </div>  
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/poco-m5s/"><img src="https://i01.appmifile.com/webfile/globalimg/summer/POCOM5s!40x40.png">
+              <p class="list_unfold_text">POCO M5 系列</p>
+              <div class="list_unfold_space"></div></a>
+          </div>  
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.mi.com/tw/product/redmi-note-11-pro-5g/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/K6S-white!40x40.png">
+              <p class="list_unfold_text">Redmi Note 11 Pro 5G</p>
+              <div class="list_unfold_space"></div></a>
+          </div>
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.po.co/tw/"><img src="https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460">
+              <p class="list_unfold_text">POCO官方網站</p>
+              <div class="list_unfold_space"></div></a>
+          </div>
+
+          <div class="list_unfold_contentbox">
+            <a href="https://www.po.co/tw/"><img src="https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460">
+              <p class="list_unfold_text">POCO X4 Pro 5G</p>
+              <div class="list_unfold_space"></div></a>
+          </div> 
+        </div>
+        
+        <div id="right_arrow_box"><img src="image/white_right_back.png" onmouseover="this.src='image/灰色右.png';"
+          onmouseout="this.src='image/white_right_back.png'"></div> 
+        <div id="left_arrow_box"><img src="image/white_left_back.png"  onmouseover="this.src='image/灰色左.png';"
+          onmouseout="this.src='image/white_left_back.png'"></div> 
+
         <div class="circle_change_pictures">
-          <i class="fi fi-ss-circle-small" id="circle1" onclick="change_pic1()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle2" onclick="change_pic2()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle3" onclick="change_pic3()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle4" onclick="change_pic4()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle5" onclick="change_pic5()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle6" onclick="change_pic6()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle7" onclick="change_pic7()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle8" onclick="change_pic8()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle9" onclick="change_pic9()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle10" onclick="change_pic10()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle11" onclick="change_pic11()" style="cursor: pointer;"></i>
-          <i class="fi fi-ss-circle-small" id="circle12" onclick="change_pic12()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic1()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic2()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic3()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic4()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic5()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic6()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic7()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic8()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic9()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic10()" style="cursor: pointer;"></i>
+          <i class="fi fi-ss-circle-small"  onclick="change_pic11()" style="cursor: pointer;"></i>
         </div>
 
+        
 
+        <!-- 側邊選單 -->
         <div class="left_choose_list">
           <div id="choose_list_1">
             <p class="choose_list_text"><b>手機</b></p>
@@ -386,80 +459,23 @@
           </a>
         </div>
 
-        <div class="left_choose_list1_unfold" id="dropMenu_cellphone">
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
-              <p class="list_unfold_text">Xiaomi 12T 系列</p>
-              <div class="list_unfold_space"></div></a>
-            </a>
-          </div>
+   
 
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer/x4-gt-blue!40x40.png">
-              <p class="list_unfold_text">POCO X4 GT</p></a>
-              <div class="list_unfold_space"></div></a>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Blackredmi10c!40x40.png">
-              <p class="list_unfold_text">Redmi 10C</p>
-              <div class="list_unfold_space"></div></a>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro!40x40.png">
-              <p class="list_unfold_text">Xiaomi 12 系列</p></a>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
-              <p class="list_unfold_text">POCO M5 系列</p></a>
-          </div> 
-
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
-              <p class="list_unfold_text">POCO X4 Pro 5G</p></a>
-          </div>  
-
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
-              <p class="list_unfold_text">POCO F4 GT</p></a>
-          </div>  
-
-          <div class="list_unfold_contentbox">
-            <a herf=""><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
-              <p class="list_unfold_text">POCO F4</p></a>
-          </div>
-
-          <!-- <div class="list_unfold_contentbox"> 
-            <p>POCO C40</p>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <p>Redmi Note 11 Pro 5G</p>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <p>Redmi Note 11S 5G</p>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <p>Redmi Note 11S</p>
-          </div>
-
-          <div class="list_unfold_contentbox">
-            <p>Redmi 10 2022</p>
-          </div>-->
-          
-        </div>
+        
 
         <!-- 更換圖片 -->
-        <a href="https://event.mi.com/tw/2022-midouble12" id="carouselsLink">
-          <img src="image/double12.png">
+        <a href="https://event.mi.com/tw/2022-michristmasday" class= main_container_slider id="carouselsLink">
+          <img src="https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460">
         </a>
+
+ 
+
+     
         
 
       </div>
+
+
       <div class="main_container_advertise">
         <div class="main_container_advertise_list">
           <a href="https://www.mi.com/tw/product/redmi-10c/" target="_blank"><img src="image/redmi 10c.png"></a>
@@ -479,10 +495,15 @@
         <a href="https://event.mi.com/tw/huiyuanquanyi"><img src="image/xiaomi_firstmember_gift.png"></a>
       </div>
     </div>
+    <!-- 明星 -->
     <div class="products_container">
       <div class="products_titlebox">
-        <p class="products_titlebox_style">明星單品</p>
+        <p class="products_titlebox_style">明星單品
+        <div class="switch_star_goods_box"></div></p>
       </div>
+     
+      
+
       <div class="main_star_products_content">
         <div class="star_products_contentbox" id="rainbow_border_top1">
           <a href="https://www.mi.com/tw/product/xiaomi-book-s-12-4/" target="_blank"><img src="image/明星一.png"
@@ -528,8 +549,64 @@
           </div>
         </div>
       </div>
+
+      <!-- <div class="main_star_products_content2">
+        <div class="star_products_contentbox" id="rainbow_border_top1">
+          <a href="https://buy.mi.com/tw/item/3214000004" target="_blank"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633675764.75855247.png?width=160&height=160"
+              class="star_product_picture">
+            <p class="products_name">小米電動打氣機 1S</p>
+          </a>
+          <p class="star_products_price">NT$ 1095</p>
+        </div>
+        <div class="star_products_contentbox" id="rainbow_border_top2">
+          <div>
+            <a href="https://buy.mi.com/tw/item/3221100074" target="_blank"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1647600303.72028110.png?width=160&height=160"
+                class="star_product_picture">
+              <p class="products_name">Xiaomi 水離子吹風機 H500</p>
+            </a>
+            <p class="star_products_price">NT$ 1395</p>
+          </div>
+        </div>
+        <div class="star_products_contentbox" id="rainbow_border_top3">
+          <div>
+            <a href="https://buy.mi.com/tw/item/3203000052" target="_blank"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1595478494.32749153.png?width=160&height=160"
+                class="star_product_picture">
+              <p class="products_name">米家恆溫電水壺 1S</p>
+            </a>
+            <p class="star_products_price">NT$ 895</p>
+          </div>
+        </div>
+        <div class="star_products_contentbox" id="rainbow_border_top4">
+          <div>
+            <a href="https://buy.mi.com/tw/item/3214500032" target="_blank"><img
+                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636538731.15176153.png?width=160&height=160" class="star_product_picture">
+              <p class="products_name">Xiaomi 智慧攝影機 標準版 2K</p>
+            </a>
+            <p class="star_products_price">NT$ 695</p>
+          </div>
+        </div>
+        <div class="star_products_contentbox_right" id="rainbow_border_top5">
+          <div>
+            <a href="https://buy.mi.com/tw/item/3202600022" target="_blank"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1593327726.88331847.png?width=160&height=160"
+                class="star_product_picture">
+              <p class="products_name">小米便攜相片印表機</p>
+            </a>
+            <p class="star_products_price">NT$ 1665</p>
+          </div>
+        </div>
+      </div> -->
+
+
+
+
     </div>
   </div>
+
+
+
+
+
+    <!-- 熱賣 -->
   <div class="product_rank">
     <div class="product_rank_all_goods">
       <div class="products_container">
