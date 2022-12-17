@@ -23,41 +23,159 @@ const MainProductType = {
     life: 8,
 }
 
+// 右邊箭頭換圖片
+var n=1,total=0;
+function plus_pic(n) {
+    total+=n;
+    if(total<=12) {
+        switch(total) {
+            case 2:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>"; 
+                document.getElementById("circle2").style.color="#b0b0b0"; 
+                break;
+            case 3:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";  
+                document.getElementById("circle3").style.color="#b0b0b0";
+                break;
+            case 4:
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";  
+                document.getElementById("circle4").style.color="#b0b0b0";
+                break;
+            case 5:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
+                document.getElementById("circle5").style.color="#b0b0b0";
+                break;
+            case 6:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>"; 
+                document.getElementById("circle6").style.color="#b0b0b0"; 
+                break;
+            case 7:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>"; 
+                document.getElementById("circle7").style.color="#b0b0b0";
+                break;
+            case 8:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>"; 
+                document.getElementById("circle8").style.color="#b0b0b0"; 
+                break;
+            case 9:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>"; 
+                document.getElementById("circle9").style.color="#b0b0b0"; 
+                break;
+            case 10:
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
+                document.getElementById("circle10").style.color="#b0b0b0";
+                break;
+            case 11:
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>"; 
+                document.getElementById("circle11").style.color="#b0b0b0"; 
+                break;
+            case 12:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
+                document.getElementById("circle1").style.color="#b0b0b0";  
+                break;
+        
+        }
+    }else {
+        total=0;
+    }
 
-// main圖片更換
-function change_pic1() {
-    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
 }
 
+// 左邊箭頭換圖片
+
+/* var n=1,total=0;
+function minus_pic(p) {
+    total+=n;
+    if(total<=12) {
+        switch(total) {
+            case 2:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>";  
+                break;
+            case 3:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";  
+                break;
+            case 4:
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";  
+                break;
+            case 5:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
+                break;
+            case 6:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";  
+                break;
+            case 7:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";  
+                break;
+            case 8:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>";  
+                break;
+            case 9:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";  
+                break;
+            case 10:
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";  
+                break;
+            case 11:
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";  
+                break;
+            case 12:
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";  
+                break;
+        
+        }
+    }else {
+        total=0;
+    }
+    console.log(total);
+  }*/
+
+
+
+
+// main左下圓圈更換圖片
+function change_pic1() {
+    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
+    document.getElementById("circle1").style.color="#b0b0b0";
+}
 function change_pic2() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>";
+    document.getElementById("circle2").style.color="#b0b0b0";
 }
 function change_pic3() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";
+    document.getElementById("circle3").style.color="#b0b0b0";
 }
 function change_pic4() {
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";
+    document.getElementById("circle4").style.color="#b0b0b0";
 }
 function change_pic5() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
+    document.getElementById("circle5").style.color="#b0b0b0";
 }
 function change_pic6() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";
+    document.getElementById("circle6").style.color="#b0b0b0";
 }
 function change_pic7() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";
+    document.getElementById("circle7").style.color="#b0b0b0";
 }
 function change_pic8() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>";
+    document.getElementById("circle8").style.color="#b0b0b0";
 }
 function change_pic9() {
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";
+    document.getElementById("circle9").style.color="#b0b0b0";
 }
 function change_pic10() {
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
+    document.getElementById("circle10").style.color="#b0b0b0";
 }
 function change_pic11() {
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";
+    document.getElementById("circle11").style.color="#b0b0b0";
 }
 
 // onmouseenter 顯示header下拉區域

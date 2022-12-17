@@ -363,11 +363,13 @@ a:hover {
   width: 800px;
   height: 460px;
   float: left;
-  margin-left: 234px;
   background-color: white;
   position: absolute; 
   z-index: 15;
-  display: none;
+  top:0;
+  left: 234px;
+  box-sizing: border-box;
+  display: none; 
 }
 
 .list_unfold_contentbox {
