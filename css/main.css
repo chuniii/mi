@@ -369,11 +369,24 @@ a:hover {
   top:0;
   left: 234px;
   box-sizing: border-box;
-  display: none; 
+  display: none;  
+}
+
+.left_choose_list3_unfold {
+  width: 265px;
+  height: 460px;
+  float: left;
+  background-color: white;
+  position: absolute; 
+  z-index: 15;
+  top:0;
+  left: 234px;
+  box-sizing: border-box;
+  display: none;  
 }
 
 .list_unfold_contentbox {
-  margin: 20px 30px 30px 20px;
+  margin: 20px 30px 20px 20px;
   height:40px;
   width:210px;
   float: left;
@@ -397,6 +410,11 @@ a:hover {
   line-height: 40px;
   font-weight: 600;
   background-color: #26a69a;
+}
+
+.list_unfold_contentbox :hover {
+  color: #ff6709;
+
 }
 
 .list_unfold_space {
