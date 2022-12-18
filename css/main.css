@@ -372,6 +372,19 @@ a:hover {
   display: none;  
 }
 
+.left_choose_list2_unfold {
+  width: 530px;
+  height: 460px;
+  float: left;
+  background-color: white;
+  position: absolute; 
+  z-index: 15;
+  top:0;
+  left: 234px;
+  box-sizing: border-box;
+  display: none;  
+}
+
 .left_choose_list3_unfold {
   width: 265px;
   height: 460px;
@@ -390,15 +403,12 @@ a:hover {
   height:40px;
   width:210px;
   float: left;
-  background-color: #2196f3;
-  
 }
 
 .list_unfold_contentbox img {
   float: left;
   display: inline-block;
   margin:0 10px 0 0;
-  background-color: #e53935;
 }
 
 .list_unfold_text {
@@ -409,7 +419,6 @@ a:hover {
   margin: 0 ;
   line-height: 40px;
   font-weight: 600;
-  background-color: #26a69a;
 }
 
 .list_unfold_contentbox :hover {
@@ -609,7 +618,7 @@ a:hover {
   background-color: white;
   margin: -60px 0 0 1153px;
   position: absolute; 
-  border:#b0b0b0 1px solid;
+  border:#e0e0e0 1px solid;
 
 }
 
