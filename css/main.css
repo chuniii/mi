@@ -592,7 +592,6 @@ a:hover {
   font-size: 22px;
   line-height: 58px;
   font-weight: 200;
-
 }
 
 .products_content {
@@ -603,24 +602,54 @@ a:hover {
 .product_rank {
   height: 5326px;
   background-color: #fafafa;
+
 }
 
 .product_rank_all_goods {
   height: 5206px;
   margin: 0 147px;
+  
+
 }
 
 /* 明星商品 */
 
-.switch_star_goods_box { 
+/* .switch_star_goods_box {  
   width:70px;
   height:24.2px;
   background-color: white;
   margin: -60px 0 0 1153px;
   position: absolute; 
   border:#e0e0e0 1px solid;
+} */
 
+/* .devide_line { 
+  color:#e0e0e0; 
+  font-size: 20px; 
+  display: inline-block;
+  float: left;
+  margin: -20.2px 36px 0 32px;
+
+}*/
+
+/* .switch_left_arrow { 
+  width: 10px;
+  height: 10px;
+  font-size: 15px;
+  margin: 3px 10px;
+  display: inline-block;
+  float: left;
+  color: #b0b0b0;
 }
+
+.switch_right_arrow {
+  width: 10px;
+  height: 10px;
+  font-size: 15px;
+  margin: -22px 12px 0;
+  display: inline-block;
+  float: right;
+} */
 
 .main_star_products_content {
   width: 1226px;
@@ -672,6 +701,8 @@ a:hover {
 #rainbow_border_top5 {
   border-top: 1px solid #26a69a;
 }
+
+
 
 .hot_products_contentbox {
   width: 234px;
@@ -863,14 +894,19 @@ a:hover {
 
 .additional_service {
   height: 80px;
-  margin: 0 auto;
-}
+  width: 1520px;
+  margin-left:0;
+  display: block;
+
+} 
 
 .four_services {
   width: 1226px;
   height: 80px;
   margin: 0 147px;
-  background-color: white;
+  display: inline-block;
+  float: left;
+  /* background-color: white; */
 }
 
 .free_delivery {
@@ -1019,12 +1055,14 @@ a:hover {
 
 .footer {
   height: 439px;
-  margin: 0;
+  width: 100%;
+  margin:0;
+  width: 1520px;
   background-color: #212121;
 }
 
 .footer_content {
-  margin: 0 147px;
+  margin: 0 147px ; 
   height: 339px;
   color: #b0b0b0;
   font-size: 14px;
@@ -1114,20 +1152,22 @@ a:hover {
 }
 
 .xiaomi_copyright {
-  margin: 35px 147px 65px 147px;
+  margin: 35px 0 65px 147px;
   float: left;
 }
 
 .space {
   height: 20px;
+  width: 1520px;
   background-color: transparent;
-  margin: 0;
+  margin:0;
+ 
 }
 
 body {
   font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
   font-weight: 400;
-  margin: 0px;
+  margin: 0;
   line-height: 1.5;
   font-size: 14px;
 }
