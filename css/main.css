@@ -434,6 +434,7 @@ a:hover {
 
 }
 
+/* main右下圓圈設定 */
 
 .circle_change_pictures {
   position: absolute;
@@ -446,8 +447,8 @@ a:hover {
 
 .circle_change_pictures :hover {
   color:#b0b0b0;
-
 }
+
 
 .choose_arrow {
   width: 16px;

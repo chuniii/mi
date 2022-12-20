@@ -24,79 +24,112 @@ const MainProductType = {
 }
 
 // 右邊箭頭換圖片
-var n=1,total=0;
-function plus_pic(n) {
-    total+=n;
-    if(total<=12) {
-        switch(total) {
+var number=1,total=0;
+function plus_pic() {
+    number++;
+    if(number<=12) {
+        switch(number) {
             case 2:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>"; 
-                document.getElementById("circle1").style.color="black";
-                document.getElementById("circle2").style.color="#b0b0b0"; 
+                const circle_group_value2 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value2.length;i++) {
+                    circle_group_value2[i].style.color="black";
+                }
+                document.getElementById("circle2").style.color="#b0b0b0";
                 break;
             case 3:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";  
-                document.getElementById("circle2").style.color="black";
+                const circle_group_value3 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value3.length;i++) {
+                    circle_group_value3[i].style.color="black";
+                }
                 document.getElementById("circle3").style.color="#b0b0b0";
                 break;
             case 4:
-                document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";  
-                document.getElementById("circle3").style.color="black";
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>"; 
+                const circle_group_value4 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value4.length;i++) {
+                    circle_group_value4[i].style.color="black";
+                } 
                 document.getElementById("circle4").style.color="#b0b0b0";
                 break;
             case 5:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
-                document.getElementById("circle4").style.color="black";
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";  
+                const circle_group_value5 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value5.length;i++) {
+                    circle_group_value5[i].style.color="black";
+                }
                 document.getElementById("circle5").style.color="#b0b0b0";
                 break;
             case 6:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>"; 
-                document.getElementById("circle5").style.color="black";
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";    
+                const circle_group_value6 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value6.length;i++) {
+                    circle_group_value6[i].style.color="black";
+                }
                 document.getElementById("circle6").style.color="#b0b0b0"; 
                 break;
             case 7:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>"; 
-                document.getElementById("circle6").style.color="black";
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";                 
+                const circle_group_value7 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value7.length;i++) {
+                    circle_group_value7[i].style.color="black";
+                }
                 document.getElementById("circle7").style.color="#b0b0b0";
                 break;
             case 8:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>"; 
-                document.getElementById("circle7").style.color="black";
+                const circle_group_value8 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value8.length;i++) {
+                    circle_group_value8[i].style.color="black";
+                }
                 document.getElementById("circle8").style.color="#b0b0b0"; 
                 break;
             case 9:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>"; 
-                document.getElementById("circle8").style.color="black";
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";   
+                const circle_group_value9 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value9.length;i++) {
+                    circle_group_value9[i].style.color="black";
+                }
                 document.getElementById("circle9").style.color="#b0b0b0"; 
                 break;
             case 10:
                 document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
-                document.getElementById("circle9").style.color="black";
+                const circle_group_value10 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value10.length;i++) {
+                    circle_group_value10[i].style.color="black";
+                }
                 document.getElementById("circle10").style.color="#b0b0b0";
                 break;
             case 11:
                 document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>"; 
-                document.getElementById("circle10").style.color="black";
+                const circle_group_value11 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value11.length;i++) {
+                    circle_group_value11[i].style.color="black";
+                }
                 document.getElementById("circle11").style.color="#b0b0b0"; 
                 break;
             case 12:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
-                document.getElementById("circle11").style.color="black";
+                const circle_group_value12 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value12.length;i++) {
+                    circle_group_value12[i].style.color="black";
+                }
                 document.getElementById("circle1").style.color="#b0b0b0";  
                 break;
         
         }
     }else {
-        total=0;
+        number=1;
     }
 
-}
+ }
 
 // 左邊箭頭換圖片
 
-/* var n=1,total=0;
-function minus_pic(p) {
-    total+=n;
+/* var number=1,total=0;
+function minus_pic() {
+    total+=number;
     if(total<=12) {
         switch(total) {
             case 2:
@@ -144,59 +177,108 @@ function minus_pic(p) {
 
 
 // main左下圓圈更換圖片
+
 function change_pic1() {
+    number=1;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
-    document.getElementById("circle11").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle1").style.color="#b0b0b0";
+    
 }
 function change_pic2() {
+    number=2;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>";
-    document.getElementById("circle1").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle2").style.color="#b0b0b0";
+    
+
 }
 function change_pic3() {
+    number=3;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";
-    document.getElementById("circle2").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";   
+    }
     document.getElementById("circle3").style.color="#b0b0b0";
+    
 }
 function change_pic4() {
+    number=4;
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";
-    document.getElementById("circle3").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle4").style.color="#b0b0b0";
 }
 function change_pic5() {
+    number=5;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
-    document.getElementById("circle4").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle5").style.color="#b0b0b0";
 }
 function change_pic6() {
+    number=6;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";
-    document.getElementById("circle5").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle6").style.color="#b0b0b0";
 }
 function change_pic7() {
+    number=7;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";
-    document.getElementById("circle6").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle7").style.color="#b0b0b0";
 }
 function change_pic8() {
+    number=8;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>";
-    document.getElementById("circle7").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle8").style.color="#b0b0b0";
 }
 function change_pic9() {
+    number=9;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";
-    document.getElementById("circle8").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle9").style.color="#b0b0b0";
 }
 function change_pic10() {
+    number=10;
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
-    document.getElementById("circle9").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle10").style.color="#b0b0b0";
 }
 function change_pic11() {
+    number=11;
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";
-    document.getElementById("circle10").style.color="black";
+    const circle_group_number = document.getElementsByClassName("circle_group")
+    for (i=0;i<circle_group_number.length;i++) {
+        circle_group_number[i].style.color="black";
+    }
     document.getElementById("circle11").style.color="#b0b0b0";
 }
 
