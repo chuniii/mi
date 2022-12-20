@@ -431,7 +431,6 @@ a:hover {
   height: 40px;
   float: left;
   display: inline-block;
-
 }
 
 
@@ -444,9 +443,12 @@ a:hover {
   text-align: center;
 }
 
+.circles{
+  color:black;
+}
+
 .circle_change_pictures :hover {
   color:#b0b0b0;
-
 }
 
 .choose_arrow {
