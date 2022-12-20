@@ -325,11 +325,9 @@ a:hover {
 }
 
 .main_container_slider {
-  height: 460px;
-  overflow: hidden;
-  position: relative;
-  z-index: 3;
+  height:460px;
 }
+
 
 #right_arrow_box {
   width: 41px;
@@ -365,9 +363,8 @@ a:hover {
   float: left;
   background-color: white;
   position: absolute; 
-  z-index: 15;
-  top:0;
-  left: 234px;
+  z-index: 6;
+  margin-left: 234px;
   box-sizing: border-box;
   display: none;  
 }
@@ -378,9 +375,8 @@ a:hover {
   float: left;
   background-color: white;
   position: absolute; 
-  z-index: 15;
-  top:0;
-  left: 234px;
+  z-index: 6;
+  margin-left: 234px;
   box-sizing: border-box;
   display: none;  
 }
@@ -391,9 +387,8 @@ a:hover {
   float: left;
   background-color: white;
   position: absolute; 
-  z-index: 15;
-  top:0;
-  left: 234px;
+  z-index: 6;
+  margin-left: 234px;
   box-sizing: border-box;
   display: none;  
 }
@@ -440,13 +435,10 @@ a:hover {
   z-index: 5;
   width: 240px;
   height: 18px;
-  margin: 422px 30px 20px 956px;
+  margin: 422px 5px 20px 981px;
   text-align: center;
 }
 
-.circles{
-  color:black;
-}
 
 .circle_change_pictures :hover {
   color:#b0b0b0;
@@ -655,9 +647,47 @@ a:hover {
   float: right;
 } 
 
+/* 明星商品動畫 */
+
+#star_carousel_all {
+  width:1226px;
+  height: 340px;
+  overflow: hidden; 
+}
+
+
+
+#star_carousel {
+  width: 2452px;
+  animation : star_animate 5s ease-out infinite;
+/* 動畫設定 (名稱 動畫時間 動畫加速度曲線 播放次數) */
+}
+
+@keyframes star_animate {
+  0%, 40% {
+    margin-left:0;
+
+  }
+
+  60%, 100% {
+    margin-left: -1226px;
+
+  }
+
+
+}
+
 .main_star_products_content {
   width: 1226px;
   height: 340px;
+}
+
+.main_star_products_content2 {
+  width: 1226px;
+  height: 340px;
+  margin:0;  
+  float: left;
+  display: inline-block;
 }
 
 .star_products_contentbox {

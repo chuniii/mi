@@ -27,10 +27,11 @@ const MainProductType = {
 var number=1;
 function plus_pic() {
     number++;
-    if(number<=12) {
+    if(number<=10) {
         switch(number) {
             case 2:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>"; 
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-curved-gaming-monitor-30";
                 const circle_group_value2 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value2.length;i++) {
                     circle_group_value2[i].style.color="black";
@@ -39,6 +40,7 @@ function plus_pic() {
                 break;
             case 3:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-robot-vacuum-s10-plus";
                 const circle_group_value3 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value3.length;i++) {
                     circle_group_value3[i].style.color="black";
@@ -47,6 +49,7 @@ function plus_pic() {
                 break;
             case 4:
                 document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>"; 
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/poco-c40/";
                 const circle_group_value4 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value4.length;i++) {
                     circle_group_value4[i].style.color="black";
@@ -55,6 +58,7 @@ function plus_pic() {
                 break;
             case 5:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://event.mi.com/tw/business";
                 const circle_group_value5 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value5.length;i++) {
                     circle_group_value5[i].style.color="black";
@@ -62,7 +66,8 @@ function plus_pic() {
                 document.getElementById("circle5").style.color="#b0b0b0";
                 break;
             case 6:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";    
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";    
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/xiaomi-12t-pro/";
                 const circle_group_value6 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value6.length;i++) {
                     circle_group_value6[i].style.color="black";
@@ -70,7 +75,8 @@ function plus_pic() {
                 document.getElementById("circle6").style.color="#b0b0b0"; 
                 break;
             case 7:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";                 
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/w10-ultra-pc.png?width=1226&height=460'>";                 
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-truclean-w10ultra-wet-dry-vacuum";
                 const circle_group_value7 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value7.length;i++) {
                     circle_group_value7[i].style.color="black";
@@ -78,7 +84,8 @@ function plus_pic() {
                 document.getElementById("circle7").style.color="#b0b0b0";
                 break;
             case 8:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>"; 
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/11-proplus-pc.png?width=1226&height=460'>"; 
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/redmi-note-11-pro-plus-5g";
                 const circle_group_value8 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value8.length;i++) {
                     circle_group_value8[i].style.color="black";
@@ -86,14 +93,15 @@ function plus_pic() {
                 document.getElementById("circle8").style.color="#b0b0b0"; 
                 break;
             case 9:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";   
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";   
+                document.getElementById("carouselsLink").href="https://event.mi.com/tw/kkbox";
                 const circle_group_value9 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value9.length;i++) {
                     circle_group_value9[i].style.color="black";
                 }
                 document.getElementById("circle9").style.color="#b0b0b0"; 
                 break;
-            case 10:
+            /*case 10:
                 document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
                 const circle_group_value10 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_value10.length;i++) {
@@ -108,12 +116,13 @@ function plus_pic() {
                     circle_group_value11[i].style.color="black";
                 }
                 document.getElementById("circle11").style.color="#b0b0b0"; 
-                break;
-            case 12:
+                break;*/
+            case 10:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
-                const circle_group_value12 = document.getElementsByClassName("circle_group")
-                for (i=0;i<circle_group_value12.length;i++) {
-                    circle_group_value12[i].style.color="black";
+                document.getElementById("carouselsLink").href="https://event.mi.com/tw/2022-michristmasday";
+                const circle_group_value10 = document.getElementsByClassName("circle_group")
+                for (i=0;i<circle_group_value10.length;i++) {
+                    circle_group_value10[i].style.color="black";
                 }
                 document.getElementById("circle1").style.color="#b0b0b0";  
                 break;
@@ -136,6 +145,7 @@ function minus_pic() {
         switch(number) {
             case 2:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-curved-gaming-monitor-30";
                 const circle_group_minus2 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus2.length;i++) {
                     circle_group_minus2[i].style.color="black";
@@ -144,6 +154,7 @@ function minus_pic() {
                 break;
             case 3:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-robot-vacuum-s10-plus";
                 const circle_group_minus3 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus3.length;i++) {
                     circle_group_minus3[i].style.color="black";
@@ -152,6 +163,7 @@ function minus_pic() {
                 break;
             case 4:
                 document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/poco-c40/";
                 const circle_group_minus4 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus4length;i++) {
                     circle_group_minus4[i].style.color="black";
@@ -160,6 +172,7 @@ function minus_pic() {
                 break;
             case 5:
                 document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
+                document.getElementById("carouselsLink").href="https://event.mi.com/tw/business";
                 const circle_group_minus5 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus5.length;i++) {
                     circle_group_minus5[i].style.color="black";
@@ -167,7 +180,8 @@ function minus_pic() {
                 document.getElementById("circle5").style.color="#b0b0b0"; 
                 break;
             case 6:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/xiaomi-12t-pro/";
                 const circle_group_minus6 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus6.length;i++) {
                     circle_group_minus6[i].style.color="black";
@@ -175,7 +189,8 @@ function minus_pic() {
                 document.getElementById("circle6").style.color="#b0b0b0"; 
                 break;
             case 7:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/w10-ultra-pc.png?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-truclean-w10ultra-wet-dry-vacuum";
                 const circle_group_minus7 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus7.length;i++) {
                     circle_group_minus7[i].style.color="black";
@@ -183,7 +198,8 @@ function minus_pic() {
                 document.getElementById("circle7").style.color="#b0b0b0"; 
                 break;
             case 8:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/11-proplus-pc.png?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/redmi-note-11-pro-plus-5g";
                 const circle_group_minus8 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus8.length;i++) {
                     circle_group_minus8[i].style.color="black";
@@ -191,14 +207,15 @@ function minus_pic() {
                 document.getElementById("circle8").style.color="#b0b0b0"; 
                 break;
             case 9:
-                document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";  
+                document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";  
+                document.getElementById("carouselsLink").href="https://event.mi.com/tw/kkbox";
                 const circle_group_minus9 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus9.length;i++) {
                     circle_group_minus9[i].style.color="black";
                 }
                 document.getElementById("circle9").style.color="#b0b0b0"; 
                 break;
-            case 10:
+            /*case 10:
                 document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";  
                 const circle_group_minus10 = document.getElementsByClassName("circle_group")
                 for (i=0;i<circle_group_minus10.length;i++) {
@@ -213,27 +230,29 @@ function minus_pic() {
                     circle_group_minus11[i].style.color="black";
                 }
                 document.getElementById("circle11").style.color="#b0b0b0"; 
-                break;
+                break;*/
      
         
         }
     }else {
-            document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";  
-            const circle_group_minus12 = document.getElementsByClassName("circle_group")
-            for (i=0;i<circle_group_minus12.length;i++) {
-                circle_group_minus12[i].style.color="black";
-            }
-            document.getElementById("circle1").style.color="#b0b0b0"; 
-            number=12;
+        document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";  
+        document.getElementById("carouselsLink").href="https://event.mi.com/tw/2022-michristmasday";
+        const circle_group_minus10 = document.getElementsByClassName("circle_group")
+        for (i=0;i<circle_group_minus10.length;i++) {
+                circle_group_minus10[i].style.color="black";
+        }
+        document.getElementById("circle1").style.color="#b0b0b0"; 
+        number=10;
     }
   }
 
 
-// main左下圓圈更換圖片
+// main右下圓圈更換圖片
 
 function change_pic1() {
     number=1;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/shengdanjie-pc2022.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://event.mi.com/tw/2022-michristmasday";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -244,6 +263,7 @@ function change_pic1() {
 function change_pic2() {
     number=2;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/30qumian-pc.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-curved-gaming-monitor-30";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -255,6 +275,7 @@ function change_pic2() {
 function change_pic3() {
     number=3;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/saotuo-pcc.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-robot-vacuum-s10-plus";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";   
@@ -265,6 +286,7 @@ function change_pic3() {
 function change_pic4() {
     number=4;
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main4.jpg'>";
+    document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/poco-c40/";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -274,6 +296,7 @@ function change_pic4() {
 function change_pic5() {
     number=5;
     document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/yanganna/weiya-banner-pc.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://event.mi.com/tw/business";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -282,7 +305,8 @@ function change_pic5() {
 }
 function change_pic6() {
     number=6;
-    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/xiaomi-12t-pro/";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -291,7 +315,8 @@ function change_pic6() {
 }
 function change_pic7() {
     number=7;
-    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/w10-ultra-pc.png?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://www.mi.com/tw/buy/product/xiaomi-truclean-w10ultra-wet-dry-vacuum";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -300,7 +325,8 @@ function change_pic7() {
 }
 function change_pic8() {
     number=8;
-    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/w10pro-pc.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/11-proplus-pc.png?width=1226&height=460'>";
+    document.getElementById("carouselsLink").href="https://www.mi.com/tw/product/redmi-note-11-pro-plus-5g";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -309,16 +335,18 @@ function change_pic8() {
 }
 function change_pic9() {
     number=9;
-    document.getElementById("carouselsLink").innerHTML = "<img src='https://i01.appmifile.com/webfile/globalweb/picture/wuxian-pc.jpg?width=1226&height=460'>";
+    document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";
+    document.getElementById("carouselsLink").href="https://event.mi.com/tw/kkbox";
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
     }
     document.getElementById("circle9").style.color="#b0b0b0";
 }
-function change_pic10() {
+/*function change_pic10() {
     number=10;
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main11.jpg'>";
+    document.getElementById("change_web_address").href("");
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
@@ -328,12 +356,13 @@ function change_pic10() {
 function change_pic11() {
     number=11;
     document.getElementById("carouselsLink").innerHTML = "<img src='image/main12.png'>";
+    document.getElementById("change_web_address").href("");
     const circle_group_number = document.getElementsByClassName("circle_group")
     for (i=0;i<circle_group_number.length;i++) {
         circle_group_number[i].style.color="black";
     }
     document.getElementById("circle11").style.color="#b0b0b0";
-}
+}*/
 
 // onmouseenter 顯示header下拉區域
 
