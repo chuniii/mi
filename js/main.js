@@ -400,6 +400,22 @@ function hideProductMenu() {
     document.getElementById("dropMenu_family").style.display = "none";
     document.getElementById("dropMenu_tech").style.display = "none";
     document.getElementById("dropMenu_accessories").style.display = "none";
+    /* switch (type) {
+        case ProductType.XIAOMI_PHONE:
+            break;
+        case ProductType.REDMI_PHONE:
+            break;
+        case ProductType.POCO_PHONE:
+            break;
+        case ProductType.SMART_FAMILY:
+            break;
+        case ProductType.SMART_TECH:
+            break;
+        case ProductType.XIAOMI_ACCESSORIES:
+            break;
+        default:
+            break;
+       }*/
 }
 
 
