@@ -660,9 +660,12 @@ a:hover {
 #star_carousel {
   width: 2452px;
   animation : star_animate 5s ease-out infinite;
-/* 動畫設定 (名稱 動畫時間 動畫加速度曲線 播放次數) */
-}
+  /* 動畫設定 (名稱 動畫時間 動畫加速度曲線 播放次數) */
+  display: flex;  
+  /* 增加容器的靈活性 */
 
+}
+/* 動畫序列 控制動畫中間步驟*/
 @keyframes star_animate {
   0%, 40% {
     margin-left:0;
