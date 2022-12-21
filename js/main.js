@@ -367,6 +367,7 @@ function change_pic11() {
 // onmouseenter 顯示header下拉區域
 
 function showProductMenu(type) {
+    hideProductMenu();
     switch (type) {
         case ProductType.XIAOMI_PHONE:
             document.getElementById("dropMenu_xiaomi").style.display = "block";
@@ -392,34 +393,19 @@ function showProductMenu(type) {
 }
 
 // onmouseleave 隱藏header下拉區域
-function hideProductMenu(type) {
-    switch (type) {
-        case ProductType.XIAOMI_PHONE:
-            document.getElementById("dropMenu_xiaomi").style.display = "none";
-            break;
-        case ProductType.REDMI_PHONE:
-            document.getElementById("dropMenu_redmi").style.display = "none";
-            break;
-        case ProductType.POCO_PHONE:
-            document.getElementById("dropMenu_poco").style.display = "none";
-            break;
-        case ProductType.SMART_FAMILY:
-            document.getElementById("dropMenu_family").style.display = "none";
-            break;
-        case ProductType.SMART_TECH:
-            document.getElementById("dropMenu_tech").style.display = "none";
-            break;
-        case ProductType.XIAOMI_ACCESSORIES:
-            document.getElementById("dropMenu_accessories").style.display = "none";
-            break;
-        default:
-            break;
-    }
+function hideProductMenu() {
+    document.getElementById("dropMenu_xiaomi").style.display = "none";
+    document.getElementById("dropMenu_redmi").style.display = "none";
+    document.getElementById("dropMenu_poco").style.display = "none";
+    document.getElementById("dropMenu_family").style.display = "none";
+    document.getElementById("dropMenu_tech").style.display = "none";
+    document.getElementById("dropMenu_accessories").style.display = "none";
 }
 
 
 // onmouseenter 顯示main_choose_list下拉區域
 function showMainProductMenu(type) {
+    hideMainProductMenu();
     switch (type) {
         case MainProductType.cellphone:
             document.getElementById("dropMenu_cellphone").style.display = "block";
@@ -464,7 +450,6 @@ function hideMainProductMenu() {
     document.getElementById("dropMenu_earphone").style.display = "none";
     document.getElementById("dropMenu_healthy_care").style.display = "none";
     document.getElementById("dropMenu_life").style.display = "none";
-
 }
 
 
