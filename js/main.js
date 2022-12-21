@@ -454,38 +454,17 @@ function showMainProductMenu(type) {
 }
 
 // onmouseleave 隱藏main_choose_list下拉區域
-function hideMainProductMenu(type) {
-    switch (type) {
-        case MainProductType.cellphone:
-            document.getElementById("dropMenu_cellphone").style.display = "none";
-            break;
-        case MainProductType.entertainment:
-            document.getElementById("dropMenu_entertainment").style.display = "none";
-            break;
-        case MainProductType.smart_family_machine:
-            document.getElementById("dropMenu_smart_family_machine").style.display = "none";
-            break;
-        case MainProductType.tour:
-            document.getElementById("dropMenu_tour").style.display = "none";
-            break;
-        case MainProductType.main_smart_tech:
-            document.getElementById("dropMenu_main_smart_tech").style.display = "none";
-            break;
-        case MainProductType.threec_accessories:
-            document.getElementById("dropMenu_threec_accessories").style.display = "none";
-            break;
-        case MainProductType.earphone:
-            document.getElementById("dropMenu_earphone").style.display = "none";
-            break;
-        case MainProductType.healthy_care:
-            document.getElementById("dropMenu_healthy_care").style.display = "none";
-            break;
-        case MainProductType.life:
-            document.getElementById("dropMenu_life").style.display = "none";
-            break;
-        default:
-            break;
-    }
+function hideMainProductMenu() {
+    document.getElementById("dropMenu_cellphone").style.display = "none";
+    document.getElementById("dropMenu_entertainment").style.display = "none";
+    document.getElementById("dropMenu_smart_family_machine").style.display = "none";
+    document.getElementById("dropMenu_tour").style.display = "none";
+    document.getElementById("dropMenu_main_smart_tech").style.display = "none";
+    document.getElementById("dropMenu_threec_accessories").style.display = "none";
+    document.getElementById("dropMenu_earphone").style.display = "none";
+    document.getElementById("dropMenu_healthy_care").style.display = "none";
+    document.getElementById("dropMenu_life").style.display = "none";
+
 }
 
 

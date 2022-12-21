@@ -63,19 +63,19 @@
         <p class="header_content_decoration">Xiaomi手機</p>
       </div>
 
-      <div class="redmi_cellphone" onmouseenter="showProductMenu(1)">
+      <div class="redmi_cellphone" onmouseenter="showProductMenu(1)" onmouseleave="hideProductMenu(1)">
         <p class="header_content_decoration">Redmi手機</p>
       </div>
-      <div class="POCO_cellphone" onmouseenter="showProductMenu(2)">
+      <div class="POCO_cellphone" onmouseenter="showProductMenu(2)" onmouseleave="hideProductMenu(2)">
         <p class="header_content_decoration">POCO手機</p>
       </div>
-      <div class="smart_family" onmouseenter="showProductMenu(3)">
+      <div class="smart_family" onmouseenter="showProductMenu(3)" onmouseleave="hideProductMenu(3)">
         <p class="header_content_decoration">智慧家庭</p>
       </div>
-      <div class="smart_technology" onmouseenter="showProductMenu(4)">
+      <div class="smart_technology" onmouseenter="showProductMenu(4)" onmouseleave="hideProductMenu(4)">
         <p class="header_content_decoration">智慧科技</p>
       </div>
-      <div class="xiaomi_accessories" onmouseenter="showProductMenu(5)">
+      <div class="xiaomi_accessories" onmouseenter="showProductMenu(5)" onmouseleave="hideProductMenu(5)">
         <p class="header_content_decoration">配件</p>
       </div>
       <div class="xiaomi_service">
@@ -329,10 +329,10 @@
 
   <div class="middle_container">
     <div class="main_container">
-      <div class="main_container_slider">
+      <div class="main_container_slider" onmouseleave="hideMainProductMenu()">
 
         <!-- 側邊選單展開(手機0) -->
-        <div class="left_choose_list1_unfold" id="dropMenu_cellphone" onmouseleave="hideMainProductMenu(0)"> 
+        <div class="left_choose_list1_unfold" id="dropMenu_cellphone" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://www.mi.com/tw/product/xiaomi-12t-pro/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver!40x40.png">
               <p class="list_unfold_text">Xiaomi 12T 系列</p>
@@ -423,7 +423,7 @@
 
         <!-- 側邊選單展開(視聽娛樂1) -->
 
-        <div class="left_choose_list2_unfold" id="dropMenu_entertainment" onmouseleave="hideMainProductMenu(1)"> 
+        <div class="left_choose_list2_unfold" id="dropMenu_entertainment" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://www.mi.com/tw/product/xiaomi-monitor-q2-65/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/q265!40x40.png">
               <p class="list_unfold_text">智慧顯示器 Q2 65 型</p>
@@ -494,7 +494,7 @@
 
         <!-- 側邊選單展開(智慧家電2) -->
 
-        <div class="left_choose_list1_unfold" id="dropMenu_smart_family_machine" onmouseleave="hideMainProductMenu(2)"> 
+        <div class="left_choose_list1_unfold" id="dropMenu_smart_family_machine" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://buy.mi.com/tw/accessories/285-0-10-0"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/pms_1590402604.34861793!40x40.png">
               <p class="list_unfold_text">掃拖機器人及配件</p>
@@ -581,7 +581,7 @@
 
         <!-- 側邊選單展開(旅行穿戴3) -->
 
-        <div class="left_choose_list2_unfold" id="dropMenu_tour" onmouseleave="hideMainProductMenu(3)"> 
+        <div class="left_choose_list2_unfold" id="dropMenu_tour" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://buy.mi.com/tw/accessories/117"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/8124944!40x40.png">
               <p class="list_unfold_text">手環</p>
@@ -634,7 +634,7 @@
 
         <!-- 側邊選單展開(智慧科技4) -->
 
-        <div class="left_choose_list2_unfold" id="dropMenu_main_smart_tech" onmouseleave="hideMainProductMenu(4)"> 
+        <div class="left_choose_list2_unfold" id="dropMenu_main_smart_tech" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://buy.mi.com/tw/search_%E6%BF%95%E5%BA%A6%E8%A8%88"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/shiduji!40x40.png">
               <p class="list_unfold_text">濕度計</p>
@@ -698,7 +698,7 @@
         </div>
 
         <!-- 側邊選單展開(電源3C配件5) -->
-        <div class="left_choose_list2_unfold" id="dropMenu_threec_accessories" onmouseleave="hideMainProductMenu(5)"> 
+        <div class="left_choose_list2_unfold" id="dropMenu_threec_accessories" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://buy.mi.com/tw/accessories/70"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/pms_1591093193.40992906!40x40.png">
               <p class="list_unfold_text">行動電源</p>
@@ -745,7 +745,7 @@
 
         <!-- 側邊選單展開(耳機音箱6) -->
 
-        <div class="left_choose_list3_unfold" id="dropMenu_earphone" onmouseleave="hideMainProductMenu(6)"> 
+        <div class="left_choose_list3_unfold" id="dropMenu_earphone" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://buy.mi.com/tw/accessories/347"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/earbudsbasic2s!40x40.jpg">
               <p class="list_unfold_text">藍牙耳機</p>
@@ -762,7 +762,7 @@
 
         <!-- 側邊選單展開(健康護理7) -->
 
-        <div class="left_choose_list3_unfold" id="dropMenu_healthy_care" onmouseleave="hideMainProductMenu(7)"> 
+        <div class="left_choose_list3_unfold" id="dropMenu_healthy_care" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://buy.mi.com/tw/accessories/405"><img src="https://i01.appmifile.com/webfile/globalimg/summer/picture/pms_1587896640.98363489!40x40.png">
               <p class="list_unfold_text">吹風機</p>
@@ -798,7 +798,7 @@
 
         <!-- 側邊選單展開(生活周邊8) -->
 
-        <div class="left_choose_list2_unfold" id="dropMenu_life" onmouseleave="hideMainProductMenu(8)"> 
+        <div class="left_choose_list2_unfold" id="dropMenu_life" onmouseleave="hideMainProductMenu()"> 
           <div class="list_unfold_contentbox">
             <a href="https://www.mi.com/tw/product/xiaomi-massage-gun/"><img src="https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/jinmoqiang!40x40.png">
               <p class="list_unfold_text">按摩槍</p>
@@ -877,7 +877,7 @@
 
         <!-- 側邊選單 -->
         <div class="left_choose_list">
-          <div id="choose_list_1" onmouseenter="showMainProductMenu(0)">
+          <div id="choose_list_1" onmouseenter="showMainProductMenu(0)" >
             <p class="choose_list_text"><b>手機</b></p>
             <p class="choose_arrow">></p>
           </div>

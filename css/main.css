@@ -659,7 +659,7 @@ a:hover {
 
 #star_carousel {
   width: 2452px;
-  animation : star_animate 5s ease-out infinite;
+  animation : star_animate 4s ease-out infinite alternate;
   /* 動畫設定 (名稱 動畫時間 動畫加速度曲線 播放次數) */
   display: flex;  
   /* 增加容器的靈活性 */
