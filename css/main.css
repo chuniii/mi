@@ -685,13 +685,13 @@ a:hover {
   height: 340px;
 }
 
-.main_star_products_content2 {
+/* main_star_products_content2 { 
   width: 1226px;
   height: 340px;
   margin:0;  
   float: left;
   display: inline-block;
-}
+ } */
 
 .star_products_contentbox {
   width: 234px;
@@ -706,6 +706,14 @@ a:hover {
   width: 234px;
   height: 340px;
   margin-left: -234px;
+  float: right;
+  background-color: #fafafa;
+  display: inline-block;
+}
+
+.star_products_contentbox_right1 {
+  width: 234px;
+  height: 340px;
   float: right;
   background-color: #fafafa;
   display: inline-block;
