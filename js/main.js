@@ -22,6 +22,13 @@ const MainProductType = {
     life: 8,
 }
 
+setInterval(autoChangePic, 5000);
+
+function autoChangePic( )
+{
+    plus_pic();
+}
+
 // 右邊箭頭換圖片
 var number=1;
 function plus_pic() {
@@ -136,8 +143,6 @@ function plus_pic() {
 
 
 // 左邊箭頭換圖片
-
-
 function minus_pic() {
     number--;
     if(number>1) {
