@@ -134,22 +134,32 @@
 
 .topbar_fixed {
   width: 100%;
-  height: 40px;
-  position: fixed;
   background-color: #212121;
-  display: hide;
-  margin:0;
-  z-index: 10;
+  display: none;
+}
 
+.topbar_container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topbar_fixed.fixed-active {
+  position: fixed;
+  top: 0;
+  display: block;
+  height: 40px;
+  z-index: 20;
 }
 
 .small_xiaomi_logo {
   width:56px;
   height:28px;
-  margin:6px 0 6px 147px;
+  margin:6px 0 6px 20px;
   background-size: 24px;
   background-image: url(https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo-bg.svg);
   overflow: hidden;
+  float: left;
   align-items: center;
   background-position: left center;
   background-repeat: no-repeat;
@@ -165,45 +175,40 @@
 .search_square {
   width:170px;
   height:20px;
-  margin: -30px 277px 10px 1073px;
-  background-color: white;
-  display: inline-block;
+  margin-top: 10px;
   float: left;
 }
 
 .search_square_text {
-  width: 150px;
-  height: 20px;
-  margin:0px 10px;
   color:#424242;
   font-size: 12px;
   vertical-align: middle;
-  display: inline-block;
-  float: left;
-
+}
+.user_action {
+  float: right;
+  width: 300px;
 }
 
 .cart_box {
-  width:120px;
-  height:40px;
+  position: relative;
   float: right;
-  margin:-40px 147px 0 0;
-  display: inline-block;
   color: #757575;
-  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
+}
 
+.cart_box_inner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
 }
 
 .cart_box_text {
-  width: 86px;
-  height: 20px;
-  margin:10px 20px;
   color:#424242;
   font-size: 12px;
-  vertical-align: middle;
-  display: inline-block;
-  float: left;
-
 }
 
 .devide {

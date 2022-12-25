@@ -12,6 +12,7 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
   <script src="https://kit.fontawesome.com/8ee9a4dc46.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/listener.js"></script>
 </head>
 
 <body>
@@ -130,16 +131,24 @@
   </div>
   <!-- 固定條 -->
   <div id="fixed_content" class="topbar_fixed">
-    <div class="small_xiaomi_logo">
-      <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg">
-    </div>
+    <div class="topbar_container">
 
-    <div class="search_square">
-      <p class="search_square_text">搜尋商品</p>
-    </div>
+      <div class="small_xiaomi_logo">
+        <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg">
+      </div>
 
-    <div class="cart_box">
-      <p class="cart_box_text">購物車 ( 0 )</p>
+      <div class="user_action">
+
+        <div class="search_square">
+          <input class="search_square_text" type="text" name="keyword" value="" autocomplete="off" placeholder="搜尋商品"/>
+          <!-- <p class="search_square_text">搜尋商品</p> -->
+        </div>
+
+        <div class="cart_box">
+          <i class="fi fi-ss-shopping-cart-add cart_box_inner"></i>
+          <span class="cart_box_inner cart_box_text">購物車 ( 0 )</span>
+        </div>
+      </div>
     </div>
   </div>
 
