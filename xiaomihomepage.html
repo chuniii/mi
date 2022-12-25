@@ -17,13 +17,13 @@
 
 <body>
 
-  <div class="notify">
+  <div class="notify" id="close_notify_content">
     <a href="https://www.mi.com/tw/service/support/fangyiprotect.html" style="color: white;">小米防疫&物流發貨公告>></a>
-    <i class="close_notify">×</i>
+    <i class="close_notify" onclick="close_notify_action()">×</i>
   </div>
 
   <a href="https://event.mi.com/tw/2022-michristmasday">
-    <div class="advertise">
+    <div class="advertise" id="close_advertise_content">
       <div id="advertise_products_animation">
         <div id="advertise_carousel_all">
           <!-- 廣告輪播1 -->
@@ -111,10 +111,10 @@
             <div class="new_price">NT$695</div>
           </div>
         </div>
-      </div>
-      <p class="close_advertise">×</p>
+      </div></a>
+      <p class="close_advertise" onclick="close_advertise_action()">×</p>
     </div>
-  </a>
+  
 
   <div class="topbar" onmouseenter="hideProductMenu()">
     <div class=xiaomi_activity>
@@ -1289,16 +1289,16 @@
       <div class="products_titlebox">
         <p class="products_titlebox_style">明星單品</p>
         <div class="switch_star_goods_box">
-          <div class="switch_left_arrow"><i class="fi fi-bs-angle-left"></i></div>
+          <div class="switch_left_arrow"  onclick="change_star_content1()"><i class="fi fi-bs-angle-left"></i></div>
           <span class="devide_line">|</span>
-          <div class="switch_right_arrow"><i class="fi fi-bs-angle-right"></i></div>
+          <div class="switch_right_arrow" onclick="change_star_content2()"><i class="fi fi-bs-angle-right"></i></div>
         </div>
         </p>
       </div>
 
       <div id="star_carousel_all">
         <div id="star_carousel">
-          <div class="main_star_products_content">
+          <div class="main_star_products_content" id="star_content1">
             <div class="star_products_contentbox" id="rainbow_border_top1">
               <a href="https://www.mi.com/tw/product/xiaomi-book-s-12-4/" target="_blank"><img src="image/明星一.png"
                   class="star_product_picture">
@@ -1346,55 +1346,62 @@
 
           </div>
 
-          <div class="star_products_contentbox" id="rainbow_border_top1">
-            <a href="https://buy.mi.com/tw/item/3214000004" target="_blank"><img
-                src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633675764.75855247.png?width=160&height=160"
-                class="star_product_picture">
-              <p class="products_name">小米電動打氣機 1S</p>
-            </a>
-            <p class="star_products_price">NT$ 1095</p>
-          </div>
-          <div class="star_products_contentbox" id="rainbow_border_top2">
-            <div>
-              <a href="https://buy.mi.com/tw/item/3221100074" target="_blank"><img
-                  src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1647600303.72028110.png?width=160&height=160"
+          <div id="star_content2"> 
+            <div class="star_products_contentbox" id="rainbow_border_top1">
+              <a href="https://buy.mi.com/tw/item/3214000004" target="_blank"><img
+                  src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633675764.75855247.png?width=160&height=160"
                   class="star_product_picture">
-                <p class="products_name">Xiaomi 水離子吹風機 H500</p>
+                <p class="products_name">小米電動打氣機 1S</p>
               </a>
-              <p class="star_products_price">NT$ 1395</p>
+              <p class="star_products_price">NT$ 1095</p>
             </div>
-          </div>
-          <div class="star_products_contentbox" id="rainbow_border_top3">
-            <div>
-              <a href="https://buy.mi.com/tw/item/3203000052" target="_blank"><img
-                  src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1595478494.32749153.png?width=160&height=160"
-                  class="star_product_picture">
-                <p class="products_name">米家恆溫電水壺 1S</p>
-              </a>
-              <p class="star_products_price">NT$ 895</p>
+            <div class="star_products_contentbox" id="rainbow_border_top2">
+              <div>
+                <a href="https://buy.mi.com/tw/item/3221100074" target="_blank"><img
+                    src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1647600303.72028110.png?width=160&height=160"
+                    class="star_product_picture">
+                  <p class="products_name">Xiaomi 水離子吹風機 H500</p>
+                </a>
+                <p class="star_products_price">NT$ 1395</p>
+              </div>
             </div>
-          </div>
-          <div class="star_products_contentbox" id="rainbow_border_top4">
-            <div>
-              <a href="https://buy.mi.com/tw/item/3214500032" target="_blank"><img
-                  src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636538731.15176153.png?width=160&height=160"
-                  class="star_product_picture">
-                <p class="products_name">Xiaomi 智慧攝影機 標準版 2K</p>
-              </a>
-              <p class="star_products_price">NT$ 695</p>
+            <div class="star_products_contentbox" id="rainbow_border_top3">
+              <div>
+                <a href="https://buy.mi.com/tw/item/3203000052" target="_blank"><img
+                    src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1595478494.32749153.png?width=160&height=160"
+                    class="star_product_picture">
+                  <p class="products_name">米家恆溫電水壺 1S</p>
+                </a>
+                <p class="star_products_price">NT$ 895</p>
+              </div>
             </div>
-          </div>
-          <!-- <div class="star_products_contentbox_right" id="rainbow_border_top5"> -->
-          <div class="star_products_contentbox_right1" id="rainbow_border_top5">
-            <div>
-              <a href="https://buy.mi.com/tw/item/3202600022" target="_blank"><img
-                  src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1593327726.88331847.png?width=160&height=160"
-                  class="star_product_picture">
-                <p class="products_name">小米便攜相片印表機</p>
-              </a>
-              <p class="star_products_price">NT$ 1665</p>
+            <div class="star_products_contentbox" id="rainbow_border_top4">
+              <div>
+                <a href="https://buy.mi.com/tw/item/3214500032" target="_blank"><img
+                    src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636538731.15176153.png?width=160&height=160"
+                    class="star_product_picture">
+                  <p class="products_name">Xiaomi 智慧攝影機 標準版 2K</p>
+                </a>
+                <p class="star_products_price">NT$ 695</p>
+              </div>
             </div>
-          </div>
+            <!-- <div class="star_products_contentbox_right" id="rainbow_border_top5"> -->
+            <div class="star_products_contentbox_right1" id="rainbow_border_top5">
+              <div>
+                <a href="https://buy.mi.com/tw/item/3202600022" target="_blank"><img
+                    src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1593327726.88331847.png?width=160&height=160"
+                    class="star_product_picture">
+                  <p class="products_name">小米便攜相片印表機</p>
+                </a>
+                <p class="star_products_price">NT$ 1665</p>
+              </div>
+            </div>
+          </div> 
+
+
+
+
+
         </div>
 
 

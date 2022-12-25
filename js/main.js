@@ -21,6 +21,21 @@ const MainProductType = {
     healthy_care: 7,
     life: 8,
 }
+
+// close notify 通知橘色列
+
+function close_notify_action() {
+    document.getElementById("close_notify_content").style.display = "none";
+}
+
+// close advertise 廣告列
+function close_advertise_action() {
+    document.getElementById("close_advertise_content").style.display = "none";
+}
+
+
+
+
 // 每6000毫秒自動換圖 套用 function plus_pic()
 
 setInterval(plus_pic, 6000);
@@ -455,7 +470,8 @@ function hideMainProductMenu() {
     document.getElementById("dropMenu_healthy_care").style.display = "none";
     document.getElementById("dropMenu_life").style.display = "none";
 }
-// 滑鼠靠近圖片變色
+// 滑鼠靠近圖片變色 addtional services
+
 function change_delivery_pic() {
     document.getElementById("delivery_pic").src ='image/delivery_orange.png';
 
@@ -484,6 +500,18 @@ function change_group_buy_pic() {
 function change_back_group_buy() {
     document.getElementById("group_buy_pic").src ='image/groupbuy.png';
 
+}
+
+// switch左右箭頭切換區塊
+function change_star_content1() {
+
+    
+}
+
+function change_star_content2() {
+    // document.getElementById('star_carousel').style.animation = "star_animate 2s ease-out 8s infinite ";
+    // document.getElementById('star_carousel').style.marginLeft = "-1226px ";
+    
 }
 
 
