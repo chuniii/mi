@@ -96,6 +96,20 @@
             <h4>米家聲波電動牙刷 T500</h4>
             <div class="new_price">NT$995</div>
           </div>
+           <!-- 重複廣告輪播1 -->
+          <div class="advertise_carousel">
+            <img
+              src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633675764.75855247.png?width=360&height=360">
+            <h4>小米電動打氣機 1S</h4>
+            <div class="new_price">NT$1095</div>
+          </div>
+          <div class="advertise_carousel">
+            <img
+              src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1644547196.42651278.png?width=360&height=360">
+            <h4>Xiaomi 路由器 AC1200</h4>
+            <div class="origin_price">NT$795</div>
+            <div class="new_price">NT$695</div>
+          </div>
         </div>
       </div>
       <p class="close_advertise">×</p>
@@ -1949,9 +1963,9 @@
 
   <div class="additional_service">
     <div class="four_services">
-      <div class="free_delivery">
+      <div class="free_delivery" onmousemove="change_delivery_pic()" onmouseout="change_back_delivery()">
         <a href="https://www.mi.com/tw/service/shipping/">
-          <img src="image/免運費.png" class="free_delivery_picture">
+          <img src="image/delivery.png" class="free_delivery_picture" id="delivery_pic">
           <div class="free_delivery_text">
             <p style="color:#424242 ;">免運費</p>
             <p>全場滿 NT$800</p>
@@ -1960,9 +1974,9 @@
       </div>
 
 
-      <div class="blackcat">
+      <div class="blackcat" onmousemove="change_blackcat_pic()" onmouseout="change_back_blackcat()">
         <a href="https://www.mi.com/tw/service/shipping/">
-          <img src="image/宅配車.png" class="blackcat_picture">
+          <img src="image/blackcat.png" class="blackcat_picture" id="blackcat_pic">
           <div class="blackcat_text">
             <p style="color:#424242 ;">黑貓宅急便 x GOGOX</p>
             <p>服務升級, 限時送達</p>
@@ -1971,9 +1985,9 @@
       </div>
 
 
-      <div class="group_buy">
+      <div class="group_buy" onmousemove="change_group_buy_pic()" onmouseout="change_back_group_buy()">
         <a href="https://www.mi.com/tw/business/">
-          <img src="image/團購圖.png" class="groupbuy_picture">
+          <img src="image/groupbuy.png" class="groupbuy_picture" id="group_buy_pic">
           <div class="groupbuy_text">
             <p style="color: #424242 ;">團購採購通道</p>
             <p>採購小米好禮專屬通道</p>

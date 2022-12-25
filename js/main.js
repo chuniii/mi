@@ -21,13 +21,11 @@ const MainProductType = {
     healthy_care: 7,
     life: 8,
 }
+// 每6000毫秒自動換圖 套用 function plus_pic()
 
-setInterval(autoChangePic, 5000);
+setInterval(plus_pic, 6000);
+ 
 
-function autoChangePic( )
-{
-    plus_pic();
-}
 
 // 右邊箭頭換圖片
 var number=1;
@@ -397,6 +395,7 @@ function showProductMenu(type) {
 }
 
 // onmouseleave 隱藏header下拉區域
+
 function hideProductMenu() {
     document.getElementById("dropMenu_xiaomi").style.display = "none";
     document.getElementById("dropMenu_redmi").style.display = "none";
@@ -404,22 +403,7 @@ function hideProductMenu() {
     document.getElementById("dropMenu_family").style.display = "none";
     document.getElementById("dropMenu_tech").style.display = "none";
     document.getElementById("dropMenu_accessories").style.display = "none";
-    /* switch (type) {
-        case ProductType.XIAOMI_PHONE:
-            break;
-        case ProductType.REDMI_PHONE:
-            break;
-        case ProductType.POCO_PHONE:
-            break;
-        case ProductType.SMART_FAMILY:
-            break;
-        case ProductType.SMART_TECH:
-            break;
-        case ProductType.XIAOMI_ACCESSORIES:
-            break;
-        default:
-            break;
-       }*/
+
 }
 
 
@@ -471,6 +455,37 @@ function hideMainProductMenu() {
     document.getElementById("dropMenu_healthy_care").style.display = "none";
     document.getElementById("dropMenu_life").style.display = "none";
 }
+// 滑鼠靠近圖片變色
+function change_delivery_pic() {
+    document.getElementById("delivery_pic").src ='image/delivery_orange.png';
+
+}
+
+function change_back_delivery() {
+    document.getElementById("delivery_pic").src ='image/delivery.png';
+
+}
+
+function change_blackcat_pic() {
+    document.getElementById("blackcat_pic").src ='image/blackcat_orange.png';
+
+}
+
+function change_back_blackcat() {
+    document.getElementById("blackcat_pic").src ='image/blackcat.png';
+
+}
+
+function change_group_buy_pic() {
+    document.getElementById("group_buy_pic").src ='image/groupbuy_orange.png';
+
+}
+
+function change_back_group_buy() {
+    document.getElementById("group_buy_pic").src ='image/groupbuy.png';
+
+}
+
 
 
 

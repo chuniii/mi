@@ -31,10 +31,10 @@
 }
 
 #advertise_carousel_all {
-  width:4000px;
+  width:4800px;
   height:160px;
   display: flex;
-  animation : advertise_animate 20s ease-out infinite;
+  animation : advertise_animate 24s ease-out infinite;
 }
 /* 廣告輪播動畫 */
 @keyframes advertise_animate {
@@ -58,8 +58,13 @@
 
   }
 
-  80%, 100% {
+  80%, 90% {
     margin-left: -3200px;
+
+  }
+
+  95%, 100% {
+    margin-left: -4000px;
 
   }
 
@@ -207,7 +212,8 @@
 }
 
 .cart_box_text {
-  color:#424242;
+  display: inline-block;
+  color:#b0b0b0;
   font-size: 12px;
 }
 
