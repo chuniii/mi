@@ -1,10 +1,3 @@
-// 
-
-
-
-
-
-
 // header下拉選單
 const ProductType = {
     XIAOMI_PHONE: 0,
